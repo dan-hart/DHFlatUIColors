@@ -20,7 +20,7 @@ public struct DHFlatUIColors {
         public var name: String {
             switch self {
             case .flatUiV1:
-                return "Flat UI  v1"
+                return "Flat UI v1"
             case .american:
                 return "American"
             case .aussie:
