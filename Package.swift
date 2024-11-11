@@ -20,5 +20,8 @@ let package = Package(
         .target(
             name: "DHFlatUIColors",
             dependencies: []),
+        .testTarget(
+            name: "DHFlatUIColorsTests",
+            dependencies: ["DHFlatUIColors"]),
     ]
 )
