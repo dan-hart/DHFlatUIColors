@@ -9,6 +9,6 @@
 - [x] Self-host original Atkinson Hyperlegible regular and bold with the upstream license.
 - [x] Validate the model, exporter, browser interactions, mobile widths, failure handling, and all 289 generated Swift accessors.
 - [x] Complete independent review and accessibility checks.
-- [ ] Privacy-scan and publish to GitHub Pages through a tested Actions workflow; verify the live deployment.
+- [x] Privacy-scan and publish to GitHub Pages through a tested Actions workflow; verify the live deployment.
 
 **Deployment boundary:** Publish only the static site artifact. Keep tests, SDK source, and local tooling out of the artifact. Actions use pinned revisions and only the deploy job receives Pages write and OIDC permissions. A website deployment does not create a new SDK release; Simple remains explicitly unreleased.
