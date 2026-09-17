@@ -30,6 +30,7 @@ public struct DHFlatUIColors {
         case swedish
         @available(*, deprecated, renamed: "sherbet")
         case turkish
+        case simple
 
         /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
         public static var classic: Self { .flatUiV1 }
@@ -62,6 +63,7 @@ public struct DHFlatUIColors {
             .kiln,
             .signal,
             .sherbet,
+            .simple,
         ]
 
         public var name: String {
@@ -94,6 +96,8 @@ public struct DHFlatUIColors {
                 return "Signal"
             case .turkish:
                 return "Sherbet"
+            case .simple:
+                return "Simple"
             }
         }
 
@@ -127,6 +131,8 @@ public struct DHFlatUIColors {
                 return SignalPalette.allCases.map { $0.info }
             case .turkish:
                 return SherbetPalette.allCases.map { $0.info }
+            case .simple:
+                return SimplePalette.allCases.map { $0.info }
             }
         }
     }

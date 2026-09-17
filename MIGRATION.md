@@ -1,5 +1,13 @@
 # Naming migration
 
+## Unreleased: Simple palette
+
+The new `DHFlatUIColors.SimplePalette` contains nine selected Classic colors. Access it through `DHFlatUIColors.Palette.simple`; it is appended to `Palette.allCases`. It is not included in release 1.0.0.
+
+Adding `.simple` expands the `Palette` enum: existing exhaustive switches over palettes must add `case .simple` or a `default` branch. The compatibility notes below describe the 1.0.0 naming transition; existing individual color enums remain unchanged.
+
+## Version 1.0.0 naming transition
+
 Palette and geographic color names now use the names below. All 280 hex values and their order are unchanged. Individual color names without geographic references retain their original spellings.
 
 ## Preferred API

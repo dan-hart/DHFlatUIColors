@@ -1,8 +1,10 @@
 # DHFlatUIColors
 
-Access 280 colors across 14 palettes in Swift, with readable names, hex values, and SwiftUI colors. UIKit and AppKit color accessors are also available on supported platforms.
+Access 15 color palettes in Swift, with readable names, hex values, and SwiftUI colors. UIKit and AppKit color accessors are also available on supported platforms.
 
 **Current release: [1.0.0](https://github.com/dan-hart/DHFlatUIColors/releases/tag/1.0.0)** — descriptive palette names, 27 individual color renames, and deprecated compatibility APIs for existing code.
+
+**Unreleased on `main`:** the nine-color Simple palette described below is not included in 1.0.0.
 
 ## Requirements
 
@@ -62,7 +64,7 @@ for palette in DHFlatUIColors.Palette.allCases {
 
 ## Palettes
 
-Each palette contains 20 colors. Use `DHFlatUIColors.Palette` to browse palettes or the corresponding palette type to access individual colors.
+The 14 original palettes each contain 20 colors. Simple contains nine selected colors from Classic. Use `DHFlatUIColors.Palette` to browse palettes or the corresponding palette type to access individual colors.
 
 | Name | Palette accessor | Color type |
 |---|---|---|
@@ -80,16 +82,42 @@ Each palette contains 20 colors. Use `DHFlatUIColors.Palette` to browse palettes
 | Kiln | `.kiln` | `KilnPalette` |
 | Signal | `.signal` | `SignalPalette` |
 | Sherbet | `.sherbet` | `SherbetPalette` |
+| Simple (unreleased) | `.simple` | `SimplePalette` |
 
 All color types are nested under `DHFlatUIColors`, such as `DHFlatUIColors.BreezePalette`.
 
+## Simple palette (unreleased)
+
+Simple provides the nine colors used by AsNeeded's color picker, in the same order and with identical hex values. The blue uses the current name River Blue in place of Peter River.
+
+```swift
+import DHFlatUIColors
+
+let simpleColors = DHFlatUIColors.Palette.simple.colors
+let blue = DHFlatUIColors.SimplePalette.riverBlue.info.color
+```
+
+| Color | Hex |
+|---|---|
+| Alizarin | `#E74C3C` |
+| Carrot | `#E67E22` |
+| Orange | `#F39C12` |
+| Emerald | `#2ECC71` |
+| Turquoise | `#1ABC9C` |
+| River Blue | `#3498DB` |
+| Amethyst | `#9B59B6` |
+| Pomegranate | `#C0392B` |
+| Green Sea | `#16A085` |
+
+`Simple` is appended to `Palette.allCases`, preserving the original palettes' order. It is a new enum case: exhaustive switches over `Palette` must add `.simple` or a `default` branch when adopting this update. Existing individual color enums are unchanged.
+
 ## Migrating to 1.0.0
 
-Version 1.0.0 introduces the names above and renames 27 individual colors associated with geographic names. All 280 hex values and their iteration order are unchanged.
+Version 1.0.0 introduces the 14 original palette names above and renames 27 individual colors associated with geographic names. All 280 hex values and their iteration order are unchanged.
 
 - Previous palette types and renamed members remain available with deprecation warnings and compiler rename suggestions. No removal version is scheduled.
 - Both old and new accessors return the new display names. Update any stored or compared display strings using the migration tables.
-- Existing exhaustive switches over the original enum cases continue to compile. The preferred names are static accessors during this transition, so switches using them need a `default` branch.
+- In 1.0.0, existing exhaustive switches over the original enum cases continue to compile. The renamed palette and color members are static accessors during this transition, so switches using them need a `default` branch. The unreleased Simple addition requires the extra palette case described above.
 - Clean source builds emit expected deprecation warnings inside the compatibility accessors, which reference the retained cases.
 
 See the [complete migration guide](MIGRATION.md) for every palette and color rename, switch examples, and compatibility details.

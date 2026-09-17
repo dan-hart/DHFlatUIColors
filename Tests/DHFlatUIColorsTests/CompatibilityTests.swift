@@ -31,7 +31,7 @@ final class CompatibilityTests: XCTestCase {
         XCTAssertEqual(Set(DHFlatUIColors.SignalPalette.allCases).count, 20)
         XCTAssertEqual(DHFlatUIColors.Palette.sherbet.colors, DHFlatUIColors.SherbetPalette.allCases.map(\.info))
         XCTAssertEqual(Set(DHFlatUIColors.SherbetPalette.allCases).count, 20)
-        XCTAssertEqual(Set(DHFlatUIColors.Palette.allCases).count, 14)
+        XCTAssertEqual(Set(DHFlatUIColors.Palette.allCases).count, 15)
     }
 
     // Deprecation warnings are intentional: this protects existing client expressions.
@@ -93,10 +93,10 @@ final class CompatibilityTests: XCTestCase {
         XCTAssertEqual(DHFlatUIColors.TurkishPalette.balticSea, DHFlatUIColors.SherbetPalette.charcoal)
     }
 
-    func testLegacySwitchesRemainExhaustive() {
+    func testPaletteAndLegacyColorSwitchesAreExhaustive() {
         XCTAssertTrue(DHFlatUIColors.Palette.allCases.allSatisfy { palette in
             switch palette {
-            case .flatUiV1, .american, .aussie, .british, .canadian, .chinese, .dutch, .french, .german, .indian, .russian, .spanish, .swedish, .turkish: return true
+            case .flatUiV1, .american, .aussie, .british, .canadian, .chinese, .dutch, .french, .german, .indian, .russian, .spanish, .swedish, .turkish, .simple: return true
             }
         })
         XCTAssertTrue(DHFlatUIColors.Flatuiv1Palette.allCases.allSatisfy { color in

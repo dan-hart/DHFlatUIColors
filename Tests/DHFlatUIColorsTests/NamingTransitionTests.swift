@@ -18,6 +18,7 @@ final class NamingTransitionTests: XCTestCase {
             "Kiln",
             "Signal",
             "Sherbet",
+            "Simple",
         ])
     }
 
@@ -38,7 +39,7 @@ final class NamingTransitionTests: XCTestCase {
             ["#EF5777", "#575FCF", "#4BCFFA", "#34E7E4", "#0BE881", "#F53B57", "#3C40C6", "#0FBCF9", "#00D8D6", "#05C46B", "#FFC048", "#FFDD59", "#FF5E57", "#D2DAE2", "#485460", "#FFA801", "#FFD32A", "#FF3F34", "#808E9B", "#1E272E"],
             ["#CD84F1", "#FFCCCC", "#FF4D4D", "#FFAF40", "#FFFA65", "#C56CF0", "#FFB8B8", "#FF3838", "#FF9F1A", "#FFF200", "#32FF7E", "#7EFFF5", "#18DCFF", "#7D5FFF", "#4B4B4B", "#3AE374", "#67E6DC", "#17C0EB", "#7158E2", "#3D3D3D"],
         ]
-        XCTAssertEqual(DHFlatUIColors.Palette.allCases.map { $0.colors.map(\.hex) }, expected)
+        XCTAssertEqual(DHFlatUIColors.Palette.allCases.filter { $0 != .simple }.map { $0.colors.map(\.hex) }, expected)
     }
 
     func testGeographicColorDisplayNamesAreReplaced() {
