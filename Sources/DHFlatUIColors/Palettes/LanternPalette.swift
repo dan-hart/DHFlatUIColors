@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum BritishPalette: CaseIterable {
+    public enum LanternPalette: CaseIterable {
         /// Protoss Pylon Hex Value: #00A8FF
         case protossPylon
         /// Periwinkle Hex Value: #9C88FF
@@ -11,7 +11,8 @@ extension DHFlatUIColors {
         case risenshine
         /// Download Progress Hex Value: #4CD137
         case downloadProgress
-        /// Seabrook Hex Value: #487EB0
+        /// Harbor Blue Hex Value: #487EB0
+        @available(*, deprecated, renamed: "harborBlue")
         case seabrook
         /// Vanadyl Blue Hex Value: #0097E6
         case vanadylBlue
@@ -44,6 +45,32 @@ extension DHFlatUIColors {
         /// Electromagnetic Hex Value: #2F3640
         case electromagnetic
 
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var harborBlue: Self { .seabrook }
+
+        public static let allCases: [Self] = [
+            .protossPylon,
+            .periwinkle,
+            .risenshine,
+            .downloadProgress,
+            .harborBlue,
+            .vanadylBlue,
+            .mattPurple,
+            .nanohanachaGold,
+            .skirretGreen,
+            .naval,
+            .nasturcianFlower,
+            .lynxWhite,
+            .blueberrySoda,
+            .mazarineBlue,
+            .blueNights,
+            .harleyDavidsonOrange,
+            .hintOfPensive,
+            .chainGangGrey,
+            .picoVoid,
+            .electromagnetic,
+        ]
+
         public var info: ColorInfo {
             switch self {
             case .protossPylon:
@@ -55,7 +82,7 @@ extension DHFlatUIColors {
             case .downloadProgress:
                 return ColorInfo(name: "Download Progress", hex: "#4CD137")
             case .seabrook:
-                return ColorInfo(name: "Seabrook", hex: "#487EB0")
+                return ColorInfo(name: "Harbor Blue", hex: "#487EB0")
             case .vanadylBlue:
                 return ColorInfo(name: "Vanadyl Blue", hex: "#0097E6")
             case .mattPurple:

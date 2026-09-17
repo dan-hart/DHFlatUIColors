@@ -5,8 +5,8 @@ final class DHFlatUIColorsTests: XCTestCase {
 
     func testColorInitialization() {
         // Test a specific color
-        let alizarin = DHFlatUIColors.RussianPalette.appleValley.info
-        XCTAssertEqual(alizarin.name, "Apple Valley")
+        let alizarin = DHFlatUIColors.KeepsakePalette.rosewater.info
+        XCTAssertEqual(alizarin.name, "Rosewater")
         XCTAssertEqual(alizarin.hex.uppercased(), "#EA8685")
     }
 

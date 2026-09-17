@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum AmericanPalette: CaseIterable {
+    public enum BreezePalette: CaseIterable {
         /// Light Greenish Blue Hex Value: #55EFC4
         case lightGreenishBlue
         /// Faded Poster Hex Value: #81ECEC
@@ -31,11 +31,13 @@ extension DHFlatUIColors {
         case pinkGlamour
         /// Pico-8 Pink Hex Value: #FD79A8
         case pico8Pink
-        /// American River Hex Value: #636E72
+        /// River Stone Hex Value: #636E72
+        @available(*, deprecated, renamed: "riverStone")
         case americanRiver
         /// Bright Yarrow Hex Value: #FDCB6E
         case brightYarrow
-        /// Orangeville Hex Value: #E17055
+        /// Baked Clay Hex Value: #E17055
+        @available(*, deprecated, renamed: "bakedClay")
         case orangeville
         /// Chi-Gong Hex Value: #D63031
         case chigong
@@ -43,6 +45,33 @@ extension DHFlatUIColors {
         case prunusAvium
         /// Dracula Orchid Hex Value: #2D3436
         case draculaOrchid
+
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var riverStone: Self { .americanRiver }
+        public static var bakedClay: Self { .orangeville }
+
+        public static let allCases: [Self] = [
+            .lightGreenishBlue,
+            .fadedPoster,
+            .greenDarnerTail,
+            .shyMoment,
+            .cityLights,
+            .mintLeaf,
+            .robinsEggBlue,
+            .electronBlue,
+            .exodusFruit,
+            .soothingBreeze,
+            .sourLemon,
+            .firstDate,
+            .pinkGlamour,
+            .pico8Pink,
+            .riverStone,
+            .brightYarrow,
+            .bakedClay,
+            .chigong,
+            .prunusAvium,
+            .draculaOrchid,
+        ]
 
         public var info: ColorInfo {
             switch self {
@@ -75,11 +104,11 @@ extension DHFlatUIColors {
             case .pico8Pink:
                 return ColorInfo(name: "Pico-8 Pink", hex: "#FD79A8")
             case .americanRiver:
-                return ColorInfo(name: "American River", hex: "#636E72")
+                return ColorInfo(name: "River Stone", hex: "#636E72")
             case .brightYarrow:
                 return ColorInfo(name: "Bright Yarrow", hex: "#FDCB6E")
             case .orangeville:
-                return ColorInfo(name: "Orangeville", hex: "#E17055")
+                return ColorInfo(name: "Baked Clay", hex: "#E17055")
             case .chigong:
                 return ColorInfo(name: "Chi-Gong", hex: "#D63031")
             case .prunusAvium:

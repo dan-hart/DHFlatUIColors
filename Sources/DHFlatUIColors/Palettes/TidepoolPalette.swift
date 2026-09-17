@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum FrenchPalette: CaseIterable {
+    public enum TidepoolPalette: CaseIterable {
         /// Flat Flesh Hex Value: #FAD390
         case flatFlesh
         /// Melon Melody Hex Value: #F8C291
@@ -17,13 +17,15 @@ extension DHFlatUIColors {
         case squashBlossom
         /// Mandarin Red Hex Value: #E55039
         case mandarinRed
-        /// Azraq Blue Hex Value: #4A69BD
+        /// Dusk Blue Hex Value: #4A69BD
+        @available(*, deprecated, renamed: "duskBlue")
         case azraqBlue
         /// Dupain Hex Value: #60A3BC
         case dupain
         /// Aurora Green Hex Value: #78E08F
         case auroraGreen
-        /// Iceland Poppy Hex Value: #FA983A
+        /// Amber Petal Hex Value: #FA983A
+        @available(*, deprecated, renamed: "amberPetal")
         case icelandPoppy
         /// Tomato Red Hex Value: #EB2F06
         case tomatoRed
@@ -44,6 +46,33 @@ extension DHFlatUIColors {
         /// Reef Encounter Hex Value: #079992
         case reefEncounter
 
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var duskBlue: Self { .azraqBlue }
+        public static var amberPetal: Self { .icelandPoppy }
+
+        public static let allCases: [Self] = [
+            .flatFlesh,
+            .melonMelody,
+            .livid,
+            .spray,
+            .paradiseGreen,
+            .squashBlossom,
+            .mandarinRed,
+            .duskBlue,
+            .dupain,
+            .auroraGreen,
+            .amberPetal,
+            .tomatoRed,
+            .yuèGuāngLánBlue,
+            .goodSamaritan,
+            .waterfall,
+            .carrotOrange,
+            .jalapenoRed,
+            .darkSapphire,
+            .forestBlues,
+            .reefEncounter,
+        ]
+
         public var info: ColorInfo {
             switch self {
             case .flatFlesh:
@@ -61,13 +90,13 @@ extension DHFlatUIColors {
             case .mandarinRed:
                 return ColorInfo(name: "Mandarin Red", hex: "#E55039")
             case .azraqBlue:
-                return ColorInfo(name: "Azraq Blue", hex: "#4A69BD")
+                return ColorInfo(name: "Dusk Blue", hex: "#4A69BD")
             case .dupain:
                 return ColorInfo(name: "Dupain", hex: "#60A3BC")
             case .auroraGreen:
                 return ColorInfo(name: "Aurora Green", hex: "#78E08F")
             case .icelandPoppy:
-                return ColorInfo(name: "Iceland Poppy", hex: "#FA983A")
+                return ColorInfo(name: "Amber Petal", hex: "#FA983A")
             case .tomatoRed:
                 return ColorInfo(name: "Tomato Red", hex: "#EB2F06")
             case .yuèGuāngLánBlue:

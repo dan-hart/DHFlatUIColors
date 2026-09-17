@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum CanadianPalette: CaseIterable {
+    public enum ConfettiPalette: CaseIterable {
         /// Jigglypuff Hex Value: #FF9FF3
         case jigglypuff
         /// Casandora Yellow Hex Value: #FECA57
@@ -11,7 +11,8 @@ extension DHFlatUIColors {
         case pastelRed
         /// Megaman Hex Value: #48DBFB
         case megaman
-        /// Wild Caribbean Green Hex Value: #1DD1A1
+        /// Sea Glass Hex Value: #1DD1A1
+        @available(*, deprecated, renamed: "seaGlass")
         case wildCaribbeanGreen
         /// Lián Hóng Lotus Pink Hex Value: #F368E0
         case liánHóngLotusPink
@@ -35,7 +36,8 @@ extension DHFlatUIColors {
         case fuelTown
         /// Aqua Velvet Hex Value: #01A3A4
         case aquaVelvet
-        /// Bleu De France Hex Value: #2E86DE
+        /// Clear Blue Hex Value: #2E86DE
+        @available(*, deprecated, renamed: "clearBlue")
         case bleuDeFrance
         /// Bluebell Hex Value: #341F97
         case bluebell
@@ -43,6 +45,33 @@ extension DHFlatUIColors {
         case stormPetrel
         /// Imperial Primer Hex Value: #222F3E
         case imperialPrimer
+
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var seaGlass: Self { .wildCaribbeanGreen }
+        public static var clearBlue: Self { .bleuDeFrance }
+
+        public static let allCases: [Self] = [
+            .jigglypuff,
+            .casandoraYellow,
+            .pastelRed,
+            .megaman,
+            .seaGlass,
+            .liánHóngLotusPink,
+            .doubleDragonSkin,
+            .amour,
+            .cyanite,
+            .darkMountainMeadow,
+            .jadeDust,
+            .joustBlue,
+            .nasuPurple,
+            .lightBlueBallerina,
+            .fuelTown,
+            .aquaVelvet,
+            .clearBlue,
+            .bluebell,
+            .stormPetrel,
+            .imperialPrimer,
+        ]
 
         public var info: ColorInfo {
             switch self {
@@ -55,7 +84,7 @@ extension DHFlatUIColors {
             case .megaman:
                 return ColorInfo(name: "Megaman", hex: "#48DBFB")
             case .wildCaribbeanGreen:
-                return ColorInfo(name: "Wild Caribbean Green", hex: "#1DD1A1")
+                return ColorInfo(name: "Sea Glass", hex: "#1DD1A1")
             case .liánHóngLotusPink:
                 return ColorInfo(name: "Lián Hóng Lotus Pink", hex: "#F368E0")
             case .doubleDragonSkin:
@@ -79,7 +108,7 @@ extension DHFlatUIColors {
             case .aquaVelvet:
                 return ColorInfo(name: "Aqua Velvet", hex: "#01A3A4")
             case .bleuDeFrance:
-                return ColorInfo(name: "Bleu De France", hex: "#2E86DE")
+                return ColorInfo(name: "Clear Blue", hex: "#2E86DE")
             case .bluebell:
                 return ColorInfo(name: "Bluebell", hex: "#341F97")
             case .stormPetrel:

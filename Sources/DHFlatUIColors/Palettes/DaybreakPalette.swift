@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum AussiePalette: CaseIterable {
+    public enum DaybreakPalette: CaseIterable {
         /// Beekeeper Hex Value: #F6E58D
         case beekeeper
         /// Spiced Nectarine Hex Value: #FFBE76
@@ -29,11 +29,13 @@ extension DHFlatUIColors {
         case heliotrope
         /// Exodus Fruit Hex Value: #686DE0
         case exodusFruit
-        /// Deep Koamaru Hex Value: #30336B
+        /// Midnight Ink Hex Value: #30336B
+        @available(*, deprecated, renamed: "midnightInk")
         case deepKoamaru
         /// Soaring Eagle Hex Value: #95AFC0
         case soaringEagle
-        /// Greenland Green Hex Value: #22A6B3
+        /// Lagoon Hex Value: #22A6B3
+        @available(*, deprecated, renamed: "lagoon")
         case greenlandGreen
         /// Steel Pink Hex Value: #BE2EDD
         case steelPink
@@ -43,6 +45,33 @@ extension DHFlatUIColors {
         case deepCove
         /// Wizard Grey Hex Value: #535C68
         case wizardGrey
+
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var midnightInk: Self { .deepKoamaru }
+        public static var lagoon: Self { .greenlandGreen }
+
+        public static let allCases: [Self] = [
+            .beekeeper,
+            .spicedNectarine,
+            .pinkGlamour,
+            .juneBud,
+            .coastalBreeze,
+            .turbo,
+            .quinceJelly,
+            .carminePink,
+            .pureApple,
+            .hintOfIcePack,
+            .middleBlue,
+            .heliotrope,
+            .exodusFruit,
+            .midnightInk,
+            .soaringEagle,
+            .lagoon,
+            .steelPink,
+            .blurple,
+            .deepCove,
+            .wizardGrey,
+        ]
 
         public var info: ColorInfo {
             switch self {
@@ -73,11 +102,11 @@ extension DHFlatUIColors {
             case .exodusFruit:
                 return ColorInfo(name: "Exodus Fruit", hex: "#686DE0")
             case .deepKoamaru:
-                return ColorInfo(name: "Deep Koamaru", hex: "#30336B")
+                return ColorInfo(name: "Midnight Ink", hex: "#30336B")
             case .soaringEagle:
                 return ColorInfo(name: "Soaring Eagle", hex: "#95AFC0")
             case .greenlandGreen:
-                return ColorInfo(name: "Greenland Green", hex: "#22A6B3")
+                return ColorInfo(name: "Lagoon", hex: "#22A6B3")
             case .steelPink:
                 return ColorInfo(name: "Steel Pink", hex: "#BE2EDD")
             case .blurple:

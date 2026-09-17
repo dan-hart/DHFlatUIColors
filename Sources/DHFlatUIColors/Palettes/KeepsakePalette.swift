@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum RussianPalette: CaseIterable {
+    public enum KeepsakePalette: CaseIterable {
         /// Creamy Peach Hex Value: #F3A683
         case creamyPeach
         /// Rosy Highlight Hex Value: #F7D794
@@ -29,7 +29,8 @@ extension DHFlatUIColors {
         case roguePink
         /// Squeaky Hex Value: #63CDDA
         case squeaky
-        /// Apple Valley Hex Value: #EA8685
+        /// Rosewater Hex Value: #EA8685
+        @available(*, deprecated, renamed: "rosewater")
         case appleValley
         /// Pencil Lead Hex Value: #596275
         case pencilLead
@@ -37,12 +38,42 @@ extension DHFlatUIColors {
         case purpleCorallite
         /// Flamingo Pink Hex Value: #F78FB3
         case flamingoPink
-        /// Blue Curacao Hex Value: #3DC1D3
+        /// Blue Ripple Hex Value: #3DC1D3
+        @available(*, deprecated, renamed: "blueRipple")
         case blueCuracao
         /// Porcelain Rose Hex Value: #E66767
         case porcelainRose
-        /// Biscay Hex Value: #303952
+        /// Evening Slate Hex Value: #303952
+        @available(*, deprecated, renamed: "eveningSlate")
         case biscay
+
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var rosewater: Self { .appleValley }
+        public static var blueRipple: Self { .blueCuracao }
+        public static var eveningSlate: Self { .biscay }
+
+        public static let allCases: [Self] = [
+            .creamyPeach,
+            .rosyHighlight,
+            .softBlue,
+            .brewedMustard,
+            .oldGeranium,
+            .sawtoothAak,
+            .summertime,
+            .cornflower,
+            .tigerlily,
+            .deepRose,
+            .purpleMountainMajesty,
+            .roguePink,
+            .squeaky,
+            .rosewater,
+            .pencilLead,
+            .purpleCorallite,
+            .flamingoPink,
+            .blueRipple,
+            .porcelainRose,
+            .eveningSlate,
+        ]
 
         public var info: ColorInfo {
             switch self {
@@ -73,7 +104,7 @@ extension DHFlatUIColors {
             case .squeaky:
                 return ColorInfo(name: "Squeaky", hex: "#63CDDA")
             case .appleValley:
-                return ColorInfo(name: "Apple Valley", hex: "#EA8685")
+                return ColorInfo(name: "Rosewater", hex: "#EA8685")
             case .pencilLead:
                 return ColorInfo(name: "Pencil Lead", hex: "#596275")
             case .purpleCorallite:
@@ -81,11 +112,11 @@ extension DHFlatUIColors {
             case .flamingoPink:
                 return ColorInfo(name: "Flamingo Pink", hex: "#F78FB3")
             case .blueCuracao:
-                return ColorInfo(name: "Blue Curacao", hex: "#3DC1D3")
+                return ColorInfo(name: "Blue Ripple", hex: "#3DC1D3")
             case .porcelainRose:
                 return ColorInfo(name: "Porcelain Rose", hex: "#E66767")
             case .biscay:
-                return ColorInfo(name: "Biscay", hex: "#303952")
+                return ColorInfo(name: "Evening Slate", hex: "#303952")
             }
         }
     }

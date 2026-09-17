@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum TurkishPalette: CaseIterable {
+    public enum SherbetPalette: CaseIterable {
         /// Bright Lilac Hex Value: #CD84F1
         case brightLilac
         /// Pretty Please Hex Value: #FFCCCC
@@ -41,8 +41,35 @@ extension DHFlatUIColors {
         case spiroDiscoBall
         /// Light Indigo Hex Value: #7158E2
         case lightIndigo
-        /// Baltic Sea Hex Value: #3D3D3D
+        /// Charcoal Hex Value: #3D3D3D
+        @available(*, deprecated, renamed: "charcoal")
         case balticSea
+
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var charcoal: Self { .balticSea }
+
+        public static let allCases: [Self] = [
+            .brightLilac,
+            .prettyPlease,
+            .lightRed,
+            .mandarinSorbet,
+            .unmellowYellow,
+            .lightPurple,
+            .youngSalmon,
+            .redOrange,
+            .radiantYellow,
+            .dornYellow,
+            .wintergreen,
+            .electricBlue,
+            .neonBlue,
+            .lightSlateBlue,
+            .shadowedSteel,
+            .weirdGreen,
+            .hammamBlue,
+            .spiroDiscoBall,
+            .lightIndigo,
+            .charcoal,
+        ]
 
         public var info: ColorInfo {
             switch self {
@@ -85,7 +112,7 @@ extension DHFlatUIColors {
             case .lightIndigo:
                 return ColorInfo(name: "Light Indigo", hex: "#7158E2")
             case .balticSea:
-                return ColorInfo(name: "Baltic Sea", hex: "#3D3D3D")
+                return ColorInfo(name: "Charcoal", hex: "#3D3D3D")
             }
         }
     }

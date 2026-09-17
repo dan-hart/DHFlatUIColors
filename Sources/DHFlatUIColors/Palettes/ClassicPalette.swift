@@ -2,12 +2,13 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum Flatuiv1Palette: CaseIterable {
+    public enum ClassicPalette: CaseIterable {
         /// TURQUOISE Hex Value: #1ABC9C
         case turquoise
         /// EMERALD Hex Value: #2ECC71
         case emerald
-        /// PETER RIVER Hex Value: #3498DB
+        /// River Blue Hex Value: #3498DB
+        @available(*, deprecated, renamed: "riverBlue")
         case peterRiver
         /// AMETHYST Hex Value: #9B59B6
         case amethyst
@@ -17,7 +18,8 @@ extension DHFlatUIColors {
         case greenSea
         /// NEPHRITIS Hex Value: #27AE60
         case nephritis
-        /// BELIZE HOLE Hex Value: #2980B9
+        /// Deep Water Hex Value: #2980B9
+        @available(*, deprecated, renamed: "deepWater")
         case belizeHole
         /// WISTERIA Hex Value: #8E44AD
         case wisteria
@@ -44,6 +46,33 @@ extension DHFlatUIColors {
         /// ASBESTOS Hex Value: #7F8C8D
         case asbestos
 
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var riverBlue: Self { .peterRiver }
+        public static var deepWater: Self { .belizeHole }
+
+        public static let allCases: [Self] = [
+            .turquoise,
+            .emerald,
+            .riverBlue,
+            .amethyst,
+            .wetAsphalt,
+            .greenSea,
+            .nephritis,
+            .deepWater,
+            .wisteria,
+            .midnightBlue,
+            .sunFlower,
+            .carrot,
+            .alizarin,
+            .clouds,
+            .concrete,
+            .orange,
+            .pumpkin,
+            .pomegranate,
+            .silver,
+            .asbestos,
+        ]
+
         public var info: ColorInfo {
             switch self {
             case .turquoise:
@@ -51,7 +80,7 @@ extension DHFlatUIColors {
             case .emerald:
                 return ColorInfo(name: "EMERALD", hex: "#2ECC71")
             case .peterRiver:
-                return ColorInfo(name: "PETER RIVER", hex: "#3498DB")
+                return ColorInfo(name: "River Blue", hex: "#3498DB")
             case .amethyst:
                 return ColorInfo(name: "AMETHYST", hex: "#9B59B6")
             case .wetAsphalt:
@@ -61,7 +90,7 @@ extension DHFlatUIColors {
             case .nephritis:
                 return ColorInfo(name: "NEPHRITIS", hex: "#27AE60")
             case .belizeHole:
-                return ColorInfo(name: "BELIZE HOLE", hex: "#2980B9")
+                return ColorInfo(name: "Deep Water", hex: "#2980B9")
             case .wisteria:
                 return ColorInfo(name: "WISTERIA", hex: "#8E44AD")
             case .midnightBlue:

@@ -18,7 +18,7 @@ Add `DHFlatUIColors` to your project using Swift Package Manager.
 import DHFlatUIColors
 
 // Access a specific color
-let colorInfo = DHFlatUIColors.RussianPalette.appleValley.info
+let colorInfo = DHFlatUIColors.KeepsakePalette.rosewater.info
 let color = colorInfo.color
 let hex = colorInfo.hex
 let name = colorInfo.name
@@ -31,6 +31,12 @@ for palette in DHFlatUIColors.Palette.allCases {
     }
 }
 ```
+
+## Naming transition
+
+Palettes now use descriptive names such as Breeze, Keepsake, and Classic. Geographic color names have also been updated. Existing Swift names remain available with deprecation warnings and rename suggestions. Color values and iteration order are unchanged.
+
+See the [migration guide](MIGRATION.md) for every rename and the temporary limitation when switching over the new static accessors.
 
 ## License
 

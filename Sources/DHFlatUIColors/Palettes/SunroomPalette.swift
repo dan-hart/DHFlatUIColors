@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum ChinesePalette: CaseIterable {
+    public enum SunroomPalette: CaseIterable {
         /// Golden Sand Hex Value: #ECCC68
         case goldenSand
         /// Coral Hex Value: #FF7F50
@@ -25,7 +25,8 @@ extension DHFlatUIColors {
         case prestigeBlue
         /// Lime Soap Hex Value: #7BED9F
         case limeSoap
-        /// French Sky Blue Hex Value: #70A1FF
+        /// Open Sky Hex Value: #70A1FF
+        @available(*, deprecated, renamed: "openSky")
         case frenchSkyBlue
         /// Saturated Sky Hex Value: #5352ED
         case saturatedSky
@@ -37,12 +38,40 @@ extension DHFlatUIColors {
         case ufoGreen
         /// Clear Chill Hex Value: #1E90FF
         case clearChill
-        /// Bright Greek Hex Value: #3742FA
+        /// Vivid Iris Hex Value: #3742FA
+        @available(*, deprecated, renamed: "vividIris")
         case brightGreek
         /// Anti-Flash White Hex Value: #F1F2F6
         case antiflashWhite
         /// Twinkle Blue Hex Value: #CED6E0
         case twinkleBlue
+
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var openSky: Self { .frenchSkyBlue }
+        public static var vividIris: Self { .brightGreek }
+
+        public static let allCases: [Self] = [
+            .goldenSand,
+            .coral,
+            .wildWatermelon,
+            .peace,
+            .grisaille,
+            .orange,
+            .bruschettaTomato,
+            .watermelon,
+            .bayWharf,
+            .prestigeBlue,
+            .limeSoap,
+            .openSky,
+            .saturatedSky,
+            .white,
+            .cityLights,
+            .ufoGreen,
+            .clearChill,
+            .vividIris,
+            .antiflashWhite,
+            .twinkleBlue,
+        ]
 
         public var info: ColorInfo {
             switch self {
@@ -69,7 +98,7 @@ extension DHFlatUIColors {
             case .limeSoap:
                 return ColorInfo(name: "Lime Soap", hex: "#7BED9F")
             case .frenchSkyBlue:
-                return ColorInfo(name: "French Sky Blue", hex: "#70A1FF")
+                return ColorInfo(name: "Open Sky", hex: "#70A1FF")
             case .saturatedSky:
                 return ColorInfo(name: "Saturated Sky", hex: "#5352ED")
             case .white:
@@ -81,7 +110,7 @@ extension DHFlatUIColors {
             case .clearChill:
                 return ColorInfo(name: "Clear Chill", hex: "#1E90FF")
             case .brightGreek:
-                return ColorInfo(name: "Bright Greek", hex: "#3742FA")
+                return ColorInfo(name: "Vivid Iris", hex: "#3742FA")
             case .antiflashWhite:
                 return ColorInfo(name: "Anti-Flash White", hex: "#F1F2F6")
             case .twinkleBlue:

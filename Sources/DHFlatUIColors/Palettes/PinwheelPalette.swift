@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum GermanPalette: CaseIterable {
+    public enum PinwheelPalette: CaseIterable {
         /// Fusion Red Hex Value: #FC5C65
         case fusionRed
         /// Orange Hibiscus Hex Value: #FD9644
@@ -17,7 +17,8 @@ extension DHFlatUIColors {
         case desire
         /// Beniukon Bronze Hex Value: #FA8231
         case beniukonBronze
-        /// NYC Taxi Hex Value: #F7B731
+        /// Golden Cab Hex Value: #F7B731
+        @available(*, deprecated, renamed: "goldenCab")
         case nycTaxi
         /// Algal Fuel Hex Value: #20BF6B
         case algalFuel
@@ -44,6 +45,32 @@ extension DHFlatUIColors {
         /// Blue Horizon Hex Value: #4B6584
         case blueHorizon
 
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var goldenCab: Self { .nycTaxi }
+
+        public static let allCases: [Self] = [
+            .fusionRed,
+            .orangeHibiscus,
+            .flirtatious,
+            .reptileGreen,
+            .maximumBlueGreen,
+            .desire,
+            .beniukonBronze,
+            .goldenCab,
+            .algalFuel,
+            .turquoiseTopaz,
+            .highBlue,
+            .c64Ntsc,
+            .lighterPurple,
+            .twinkleBlue,
+            .blueGrey,
+            .boyzone,
+            .royalBlue,
+            .gloomyPurple,
+            .innuendo,
+            .blueHorizon,
+        ]
+
         public var info: ColorInfo {
             switch self {
             case .fusionRed:
@@ -61,7 +88,7 @@ extension DHFlatUIColors {
             case .beniukonBronze:
                 return ColorInfo(name: "Beniukon Bronze", hex: "#FA8231")
             case .nycTaxi:
-                return ColorInfo(name: "NYC Taxi", hex: "#F7B731")
+                return ColorInfo(name: "Golden Cab", hex: "#F7B731")
             case .algalFuel:
                 return ColorInfo(name: "Algal Fuel", hex: "#20BF6B")
             case .turquoiseTopaz:

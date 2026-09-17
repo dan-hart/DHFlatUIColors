@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum IndianPalette: CaseIterable {
+    public enum WildflowerPalette: CaseIterable {
         /// Orchid Orange Hex Value: #FEA47F
         case orchidOrange
         /// Spiro Disco Ball Hex Value: #25CCF7
@@ -17,9 +17,11 @@ extension DHFlatUIColors {
         case richGardenia
         /// Clear Chill Hex Value: #1B9CFC
         case clearChill
-        /// Sarawak White Pepper Hex Value: #F8EFBA
+        /// Pale Linen Hex Value: #F8EFBA
+        @available(*, deprecated, renamed: "paleLinen")
         case sarawakWhitePepper
-        /// Keppel Hex Value: #58B19F
+        /// Garden Teal Hex Value: #58B19F
+        @available(*, deprecated, renamed: "gardenTeal")
         case keppel
         /// Ship's Officer Hex Value: #2C3A47
         case shipsOfficer
@@ -27,7 +29,8 @@ extension DHFlatUIColors {
         case fieryFuchsia
         /// Bluebell Hex Value: #3B3B98
         case bluebell
-        /// Georgia Peach Hex Value: #FD7272
+        /// Peach Blossom Hex Value: #FD7272
+        @available(*, deprecated, renamed: "peachBlossom")
         case georgiaPeach
         /// Oasis Stream Hex Value: #9AECDB
         case oasisStream
@@ -43,6 +46,34 @@ extension DHFlatUIColors {
         case pineGlade
         /// Highlighter Lavender Hex Value: #82589F
         case highlighterLavender
+
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var paleLinen: Self { .sarawakWhitePepper }
+        public static var gardenTeal: Self { .keppel }
+        public static var peachBlossom: Self { .georgiaPeach }
+
+        public static let allCases: [Self] = [
+            .orchidOrange,
+            .spiroDiscoBall,
+            .honeyGlow,
+            .sweetGarden,
+            .fallingStar,
+            .richGardenia,
+            .clearChill,
+            .paleLinen,
+            .gardenTeal,
+            .shipsOfficer,
+            .fieryFuchsia,
+            .bluebell,
+            .peachBlossom,
+            .oasisStream,
+            .brightUbe,
+            .magentaPurple,
+            .endingNavyBlue,
+            .sasquatchSocks,
+            .pineGlade,
+            .highlighterLavender,
+        ]
 
         public var info: ColorInfo {
             switch self {
@@ -61,9 +92,9 @@ extension DHFlatUIColors {
             case .clearChill:
                 return ColorInfo(name: "Clear Chill", hex: "#1B9CFC")
             case .sarawakWhitePepper:
-                return ColorInfo(name: "Sarawak White Pepper", hex: "#F8EFBA")
+                return ColorInfo(name: "Pale Linen", hex: "#F8EFBA")
             case .keppel:
-                return ColorInfo(name: "Keppel", hex: "#58B19F")
+                return ColorInfo(name: "Garden Teal", hex: "#58B19F")
             case .shipsOfficer:
                 return ColorInfo(name: "Ship's Officer", hex: "#2C3A47")
             case .fieryFuchsia:
@@ -71,7 +102,7 @@ extension DHFlatUIColors {
             case .bluebell:
                 return ColorInfo(name: "Bluebell", hex: "#3B3B98")
             case .georgiaPeach:
-                return ColorInfo(name: "Georgia Peach", hex: "#FD7272")
+                return ColorInfo(name: "Peach Blossom", hex: "#FD7272")
             case .oasisStream:
                 return ColorInfo(name: "Oasis Stream", hex: "#9AECDB")
             case .brightUbe:

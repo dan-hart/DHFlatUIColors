@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum DutchPalette: CaseIterable {
+    public enum TapestryPalette: CaseIterable {
         /// Sunflower Hex Value: #FFC312
         case sunflower
         /// Energos Hex Value: #C4E538
@@ -17,7 +17,8 @@ extension DHFlatUIColors {
         case radiantYellow
         /// Android Green Hex Value: #A3CB38
         case androidGreen
-        /// Mediterranean Sea Hex Value: #1289A7
+        /// Deep Lagoon Hex Value: #1289A7
+        @available(*, deprecated, renamed: "deepLagoon")
         case mediterraneanSea
         /// Lavender Tea Hex Value: #D980FA
         case lavenderTea
@@ -35,7 +36,8 @@ extension DHFlatUIColors {
         case hollyhock
         /// Red Pigment Hex Value: #EA2027
         case redPigment
-        /// Turkish Aqua Hex Value: #006266
+        /// Shaded Teal Hex Value: #006266
+        @available(*, deprecated, renamed: "shadedTeal")
         case turkishAqua
         /// 20000 Leagues Under the Sea Hex Value: #1B1464
         case leaguesUnderTheSea
@@ -43,6 +45,33 @@ extension DHFlatUIColors {
         case circumorbitalRing
         /// Magenta Purple Hex Value: #6F1E51
         case magentaPurple
+
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var deepLagoon: Self { .mediterraneanSea }
+        public static var shadedTeal: Self { .turkishAqua }
+
+        public static let allCases: [Self] = [
+            .sunflower,
+            .energos,
+            .blueMartina,
+            .lavenderRose,
+            .baraRed,
+            .radiantYellow,
+            .androidGreen,
+            .deepLagoon,
+            .lavenderTea,
+            .veryBerry,
+            .puffinsBill,
+            .pixelatedGrass,
+            .merchantMarineBlue,
+            .forgottenPurple,
+            .hollyhock,
+            .redPigment,
+            .shadedTeal,
+            .leaguesUnderTheSea,
+            .circumorbitalRing,
+            .magentaPurple,
+        ]
 
         public var info: ColorInfo {
             switch self {
@@ -61,7 +90,7 @@ extension DHFlatUIColors {
             case .androidGreen:
                 return ColorInfo(name: "Android Green", hex: "#A3CB38")
             case .mediterraneanSea:
-                return ColorInfo(name: "Mediterranean Sea", hex: "#1289A7")
+                return ColorInfo(name: "Deep Lagoon", hex: "#1289A7")
             case .lavenderTea:
                 return ColorInfo(name: "Lavender Tea", hex: "#D980FA")
             case .veryBerry:
@@ -79,7 +108,7 @@ extension DHFlatUIColors {
             case .redPigment:
                 return ColorInfo(name: "Red Pigment", hex: "#EA2027")
             case .turkishAqua:
-                return ColorInfo(name: "Turkish Aqua", hex: "#006266")
+                return ColorInfo(name: "Shaded Teal", hex: "#006266")
             case .leaguesUnderTheSea:
                 return ColorInfo(name: "20000 Leagues Under the Sea", hex: "#1B1464")
             case .circumorbitalRing:

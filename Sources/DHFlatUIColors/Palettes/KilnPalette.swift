@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum SpanishPalette: CaseIterable {
+    public enum KilnPalette: CaseIterable {
         /// Jacksons Purple Hex Value: #40407A
         case jacksonsPurple
         /// C64 Purple Hex Value: #706FD3
@@ -21,7 +21,8 @@ extension DHFlatUIColors {
         case hotStone
         /// Devil Blue Hex Value: #227093
         case devilBlue
-        /// Palm Springs Splash Hex Value: #218C74
+        /// Poolside Hex Value: #218C74
+        @available(*, deprecated, renamed: "poolside")
         case palmSpringsSplash
         /// Fluorescent Red Hex Value: #FF5252
         case fluorescentRed
@@ -35,14 +36,44 @@ extension DHFlatUIColors {
         case spicedButternut
         /// Eye Of Newt Hex Value: #B33939
         case eyeOfNewt
-        /// Chilean Fire Hex Value: #CD6133
+        /// Ember Clay Hex Value: #CD6133
+        @available(*, deprecated, renamed: "emberClay")
         case chileanFire
         /// Grey Porcelain Hex Value: #84817A
         case greyPorcelain
-        /// Alameda Ochre Hex Value: #CC8E35
+        /// Toasted Ochre Hex Value: #CC8E35
+        @available(*, deprecated, renamed: "toastedOchre")
         case alamedaOchre
         /// Desert Hex Value: #CCAE62
         case desert
+
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var poolside: Self { .palmSpringsSplash }
+        public static var emberClay: Self { .chileanFire }
+        public static var toastedOchre: Self { .alamedaOchre }
+
+        public static let allCases: [Self] = [
+            .jacksonsPurple,
+            .c64Purple,
+            .swanWhite,
+            .summerSky,
+            .celestialGreen,
+            .luckyPoint,
+            .liberty,
+            .hotStone,
+            .devilBlue,
+            .poolside,
+            .fluorescentRed,
+            .syntheticPumpkin,
+            .crocodileTooth,
+            .mandarinSorbet,
+            .spicedButternut,
+            .eyeOfNewt,
+            .emberClay,
+            .greyPorcelain,
+            .toastedOchre,
+            .desert,
+        ]
 
         public var info: ColorInfo {
             switch self {
@@ -65,7 +96,7 @@ extension DHFlatUIColors {
             case .devilBlue:
                 return ColorInfo(name: "Devil Blue", hex: "#227093")
             case .palmSpringsSplash:
-                return ColorInfo(name: "Palm Springs Splash", hex: "#218C74")
+                return ColorInfo(name: "Poolside", hex: "#218C74")
             case .fluorescentRed:
                 return ColorInfo(name: "Fluorescent Red", hex: "#FF5252")
             case .syntheticPumpkin:
@@ -79,11 +110,11 @@ extension DHFlatUIColors {
             case .eyeOfNewt:
                 return ColorInfo(name: "Eye Of Newt", hex: "#B33939")
             case .chileanFire:
-                return ColorInfo(name: "Chilean Fire", hex: "#CD6133")
+                return ColorInfo(name: "Ember Clay", hex: "#CD6133")
             case .greyPorcelain:
                 return ColorInfo(name: "Grey Porcelain", hex: "#84817A")
             case .alamedaOchre:
-                return ColorInfo(name: "Alameda Ochre", hex: "#CC8E35")
+                return ColorInfo(name: "Toasted Ochre", hex: "#CC8E35")
             case .desert:
                 return ColorInfo(name: "Desert", hex: "#CCAE62")
             }

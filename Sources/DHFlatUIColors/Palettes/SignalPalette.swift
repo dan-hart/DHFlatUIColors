@@ -2,7 +2,7 @@ import SwiftUI
 
 extension DHFlatUIColors {
     /// Generated November 11, 2024
-    public enum SwedishPalette: CaseIterable {
+    public enum SignalPalette: CaseIterable {
         /// Highlighter Pink Hex Value: #EF5777
         case highlighterPink
         /// Dark Periwinkle Hex Value: #575FCF
@@ -39,10 +39,37 @@ extension DHFlatUIColors {
         case vibrantYellow
         /// Red Orange Hex Value: #FF3F34
         case redOrange
-        /// London Square Hex Value: #808E9B
+        /// Pavement Hex Value: #808E9B
+        @available(*, deprecated, renamed: "pavement")
         case londonSquare
         /// Black Pearl Hex Value: #1E272E
         case blackPearl
+
+        /// Preferred spellings; legacy cases remain for exhaustive switch compatibility.
+        public static var pavement: Self { .londonSquare }
+
+        public static let allCases: [Self] = [
+            .highlighterPink,
+            .darkPeriwinkle,
+            .megaman,
+            .freshTurquoise,
+            .mintyGreen,
+            .sizzlingRed,
+            .freeSpeechBlue,
+            .spiroDiscoBall,
+            .jadeDust,
+            .greenTeal,
+            .nârenjiOrange,
+            .yrielYellow,
+            .sunsetOrange,
+            .hintOfElusiveBlue,
+            .goodNight,
+            .chromeYellow,
+            .vibrantYellow,
+            .redOrange,
+            .pavement,
+            .blackPearl,
+        ]
 
         public var info: ColorInfo {
             switch self {
@@ -83,7 +110,7 @@ extension DHFlatUIColors {
             case .redOrange:
                 return ColorInfo(name: "Red Orange", hex: "#FF3F34")
             case .londonSquare:
-                return ColorInfo(name: "London Square", hex: "#808E9B")
+                return ColorInfo(name: "Pavement", hex: "#808E9B")
             case .blackPearl:
                 return ColorInfo(name: "Black Pearl", hex: "#1E272E")
             }
