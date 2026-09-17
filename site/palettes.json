@@ -1,0 +1,1913 @@
+{
+  "schemaVersion": 1,
+  "palettes": [
+    {
+      "id": "classic",
+      "name": "Classic",
+      "type": "ClassicPalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "turquoise",
+          "name": "TURQUOISE",
+          "hex": "#1ABC9C",
+          "legacyNames": []
+        },
+        {
+          "id": "emerald",
+          "name": "EMERALD",
+          "hex": "#2ECC71",
+          "legacyNames": []
+        },
+        {
+          "id": "riverBlue",
+          "name": "River Blue",
+          "hex": "#3498DB",
+          "legacyNames": [
+            "peterRiver"
+          ]
+        },
+        {
+          "id": "amethyst",
+          "name": "AMETHYST",
+          "hex": "#9B59B6",
+          "legacyNames": []
+        },
+        {
+          "id": "wetAsphalt",
+          "name": "WET ASPHALT",
+          "hex": "#34495E",
+          "legacyNames": []
+        },
+        {
+          "id": "greenSea",
+          "name": "GREEN SEA",
+          "hex": "#16A085",
+          "legacyNames": []
+        },
+        {
+          "id": "nephritis",
+          "name": "NEPHRITIS",
+          "hex": "#27AE60",
+          "legacyNames": []
+        },
+        {
+          "id": "deepWater",
+          "name": "Deep Water",
+          "hex": "#2980B9",
+          "legacyNames": [
+            "belizeHole"
+          ]
+        },
+        {
+          "id": "wisteria",
+          "name": "WISTERIA",
+          "hex": "#8E44AD",
+          "legacyNames": []
+        },
+        {
+          "id": "midnightBlue",
+          "name": "MIDNIGHT BLUE",
+          "hex": "#2C3E50",
+          "legacyNames": []
+        },
+        {
+          "id": "sunFlower",
+          "name": "SUN FLOWER",
+          "hex": "#F1C40F",
+          "legacyNames": []
+        },
+        {
+          "id": "carrot",
+          "name": "CARROT",
+          "hex": "#E67E22",
+          "legacyNames": []
+        },
+        {
+          "id": "alizarin",
+          "name": "ALIZARIN",
+          "hex": "#E74C3C",
+          "legacyNames": []
+        },
+        {
+          "id": "clouds",
+          "name": "CLOUDS",
+          "hex": "#ECF0F1",
+          "legacyNames": []
+        },
+        {
+          "id": "concrete",
+          "name": "CONCRETE",
+          "hex": "#95A5A6",
+          "legacyNames": []
+        },
+        {
+          "id": "orange",
+          "name": "ORANGE",
+          "hex": "#F39C12",
+          "legacyNames": []
+        },
+        {
+          "id": "pumpkin",
+          "name": "PUMPKIN",
+          "hex": "#D35400",
+          "legacyNames": []
+        },
+        {
+          "id": "pomegranate",
+          "name": "POMEGRANATE",
+          "hex": "#C0392B",
+          "legacyNames": []
+        },
+        {
+          "id": "silver",
+          "name": "SILVER",
+          "hex": "#BDC3C7",
+          "legacyNames": []
+        },
+        {
+          "id": "asbestos",
+          "name": "ASBESTOS",
+          "hex": "#7F8C8D",
+          "legacyNames": []
+        }
+      ]
+    },
+    {
+      "id": "breeze",
+      "name": "Breeze",
+      "type": "BreezePalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "lightGreenishBlue",
+          "name": "Light Greenish Blue",
+          "hex": "#55EFC4",
+          "legacyNames": []
+        },
+        {
+          "id": "fadedPoster",
+          "name": "Faded Poster",
+          "hex": "#81ECEC",
+          "legacyNames": []
+        },
+        {
+          "id": "greenDarnerTail",
+          "name": "Green Darner Tail",
+          "hex": "#74B9FF",
+          "legacyNames": []
+        },
+        {
+          "id": "shyMoment",
+          "name": "Shy Moment",
+          "hex": "#A29BFE",
+          "legacyNames": []
+        },
+        {
+          "id": "cityLights",
+          "name": "City Lights",
+          "hex": "#DFE6E9",
+          "legacyNames": []
+        },
+        {
+          "id": "mintLeaf",
+          "name": "Mint Leaf",
+          "hex": "#00B894",
+          "legacyNames": []
+        },
+        {
+          "id": "robinsEggBlue",
+          "name": "Robin's Egg Blue",
+          "hex": "#00CEC9",
+          "legacyNames": []
+        },
+        {
+          "id": "electronBlue",
+          "name": "Electron Blue",
+          "hex": "#0984E3",
+          "legacyNames": []
+        },
+        {
+          "id": "exodusFruit",
+          "name": "Exodus Fruit",
+          "hex": "#6C5CE7",
+          "legacyNames": []
+        },
+        {
+          "id": "soothingBreeze",
+          "name": "Soothing Breeze",
+          "hex": "#B2BEC3",
+          "legacyNames": []
+        },
+        {
+          "id": "sourLemon",
+          "name": "Sour Lemon",
+          "hex": "#FFEAA7",
+          "legacyNames": []
+        },
+        {
+          "id": "firstDate",
+          "name": "First Date",
+          "hex": "#FAB1A0",
+          "legacyNames": []
+        },
+        {
+          "id": "pinkGlamour",
+          "name": "Pink Glamour",
+          "hex": "#FF7675",
+          "legacyNames": []
+        },
+        {
+          "id": "pico8Pink",
+          "name": "Pico-8 Pink",
+          "hex": "#FD79A8",
+          "legacyNames": []
+        },
+        {
+          "id": "riverStone",
+          "name": "River Stone",
+          "hex": "#636E72",
+          "legacyNames": [
+            "americanRiver"
+          ]
+        },
+        {
+          "id": "brightYarrow",
+          "name": "Bright Yarrow",
+          "hex": "#FDCB6E",
+          "legacyNames": []
+        },
+        {
+          "id": "bakedClay",
+          "name": "Baked Clay",
+          "hex": "#E17055",
+          "legacyNames": [
+            "orangeville"
+          ]
+        },
+        {
+          "id": "chigong",
+          "name": "Chi-Gong",
+          "hex": "#D63031",
+          "legacyNames": []
+        },
+        {
+          "id": "prunusAvium",
+          "name": "Prunus Avium",
+          "hex": "#E84393",
+          "legacyNames": []
+        },
+        {
+          "id": "draculaOrchid",
+          "name": "Dracula Orchid",
+          "hex": "#2D3436",
+          "legacyNames": []
+        }
+      ]
+    },
+    {
+      "id": "daybreak",
+      "name": "Daybreak",
+      "type": "DaybreakPalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "beekeeper",
+          "name": "Beekeeper",
+          "hex": "#F6E58D",
+          "legacyNames": []
+        },
+        {
+          "id": "spicedNectarine",
+          "name": "Spiced Nectarine",
+          "hex": "#FFBE76",
+          "legacyNames": []
+        },
+        {
+          "id": "pinkGlamour",
+          "name": "Pink Glamour",
+          "hex": "#FF7979",
+          "legacyNames": []
+        },
+        {
+          "id": "juneBud",
+          "name": "June Bud",
+          "hex": "#BADC58",
+          "legacyNames": []
+        },
+        {
+          "id": "coastalBreeze",
+          "name": "Coastal Breeze",
+          "hex": "#DFF9FB",
+          "legacyNames": []
+        },
+        {
+          "id": "turbo",
+          "name": "Turbo",
+          "hex": "#F9CA24",
+          "legacyNames": []
+        },
+        {
+          "id": "quinceJelly",
+          "name": "Quince Jelly",
+          "hex": "#F0932B",
+          "legacyNames": []
+        },
+        {
+          "id": "carminePink",
+          "name": "Carmine Pink",
+          "hex": "#EB4D4B",
+          "legacyNames": []
+        },
+        {
+          "id": "pureApple",
+          "name": "Pure Apple",
+          "hex": "#6AB04C",
+          "legacyNames": []
+        },
+        {
+          "id": "hintOfIcePack",
+          "name": "Hint of Ice Pack",
+          "hex": "#C7ECEE",
+          "legacyNames": []
+        },
+        {
+          "id": "middleBlue",
+          "name": "Middle Blue",
+          "hex": "#7ED6DF",
+          "legacyNames": []
+        },
+        {
+          "id": "heliotrope",
+          "name": "Heliotrope",
+          "hex": "#E056FD",
+          "legacyNames": []
+        },
+        {
+          "id": "exodusFruit",
+          "name": "Exodus Fruit",
+          "hex": "#686DE0",
+          "legacyNames": []
+        },
+        {
+          "id": "midnightInk",
+          "name": "Midnight Ink",
+          "hex": "#30336B",
+          "legacyNames": [
+            "deepKoamaru"
+          ]
+        },
+        {
+          "id": "soaringEagle",
+          "name": "Soaring Eagle",
+          "hex": "#95AFC0",
+          "legacyNames": []
+        },
+        {
+          "id": "lagoon",
+          "name": "Lagoon",
+          "hex": "#22A6B3",
+          "legacyNames": [
+            "greenlandGreen"
+          ]
+        },
+        {
+          "id": "steelPink",
+          "name": "Steel Pink",
+          "hex": "#BE2EDD",
+          "legacyNames": []
+        },
+        {
+          "id": "blurple",
+          "name": "Blurple",
+          "hex": "#4834D4",
+          "legacyNames": []
+        },
+        {
+          "id": "deepCove",
+          "name": "Deep Cove",
+          "hex": "#130F40",
+          "legacyNames": []
+        },
+        {
+          "id": "wizardGrey",
+          "name": "Wizard Grey",
+          "hex": "#535C68",
+          "legacyNames": []
+        }
+      ]
+    },
+    {
+      "id": "lantern",
+      "name": "Lantern",
+      "type": "LanternPalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "protossPylon",
+          "name": "Protoss Pylon",
+          "hex": "#00A8FF",
+          "legacyNames": []
+        },
+        {
+          "id": "periwinkle",
+          "name": "Periwinkle",
+          "hex": "#9C88FF",
+          "legacyNames": []
+        },
+        {
+          "id": "risenshine",
+          "name": "Rise-N-Shine",
+          "hex": "#FBC531",
+          "legacyNames": []
+        },
+        {
+          "id": "downloadProgress",
+          "name": "Download Progress",
+          "hex": "#4CD137",
+          "legacyNames": []
+        },
+        {
+          "id": "harborBlue",
+          "name": "Harbor Blue",
+          "hex": "#487EB0",
+          "legacyNames": [
+            "seabrook"
+          ]
+        },
+        {
+          "id": "vanadylBlue",
+          "name": "Vanadyl Blue",
+          "hex": "#0097E6",
+          "legacyNames": []
+        },
+        {
+          "id": "mattPurple",
+          "name": "Matt Purple",
+          "hex": "#8C7AE6",
+          "legacyNames": []
+        },
+        {
+          "id": "nanohanachaGold",
+          "name": "Nanohanacha Gold",
+          "hex": "#E1B12C",
+          "legacyNames": []
+        },
+        {
+          "id": "skirretGreen",
+          "name": "Skirret Green",
+          "hex": "#44BD32",
+          "legacyNames": []
+        },
+        {
+          "id": "naval",
+          "name": "Naval",
+          "hex": "#40739E",
+          "legacyNames": []
+        },
+        {
+          "id": "nasturcianFlower",
+          "name": "Nasturcian Flower",
+          "hex": "#E84118",
+          "legacyNames": []
+        },
+        {
+          "id": "lynxWhite",
+          "name": "Lynx White",
+          "hex": "#F5F6FA",
+          "legacyNames": []
+        },
+        {
+          "id": "blueberrySoda",
+          "name": "Blueberry Soda",
+          "hex": "#7F8FA6",
+          "legacyNames": []
+        },
+        {
+          "id": "mazarineBlue",
+          "name": "Mazarine Blue",
+          "hex": "#273C75",
+          "legacyNames": []
+        },
+        {
+          "id": "blueNights",
+          "name": "Blue Nights",
+          "hex": "#353B48",
+          "legacyNames": []
+        },
+        {
+          "id": "harleyDavidsonOrange",
+          "name": "Harley Davidson Orange",
+          "hex": "#C23616",
+          "legacyNames": []
+        },
+        {
+          "id": "hintOfPensive",
+          "name": "Hint of Pensive",
+          "hex": "#DCDDE1",
+          "legacyNames": []
+        },
+        {
+          "id": "chainGangGrey",
+          "name": "Chain Gang Grey",
+          "hex": "#718093",
+          "legacyNames": []
+        },
+        {
+          "id": "picoVoid",
+          "name": "Pico Void",
+          "hex": "#192A56",
+          "legacyNames": []
+        },
+        {
+          "id": "electromagnetic",
+          "name": "Electromagnetic",
+          "hex": "#2F3640",
+          "legacyNames": []
+        }
+      ]
+    },
+    {
+      "id": "confetti",
+      "name": "Confetti",
+      "type": "ConfettiPalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "jigglypuff",
+          "name": "Jigglypuff",
+          "hex": "#FF9FF3",
+          "legacyNames": []
+        },
+        {
+          "id": "casandoraYellow",
+          "name": "Casandora Yellow",
+          "hex": "#FECA57",
+          "legacyNames": []
+        },
+        {
+          "id": "pastelRed",
+          "name": "Pastel Red",
+          "hex": "#FF6B6B",
+          "legacyNames": []
+        },
+        {
+          "id": "megaman",
+          "name": "Megaman",
+          "hex": "#48DBFB",
+          "legacyNames": []
+        },
+        {
+          "id": "seaGlass",
+          "name": "Sea Glass",
+          "hex": "#1DD1A1",
+          "legacyNames": [
+            "wildCaribbeanGreen"
+          ]
+        },
+        {
+          "id": "liánHóngLotusPink",
+          "name": "Lián Hóng Lotus Pink",
+          "hex": "#F368E0",
+          "legacyNames": []
+        },
+        {
+          "id": "doubleDragonSkin",
+          "name": "Double Dragon Skin",
+          "hex": "#FF9F43",
+          "legacyNames": []
+        },
+        {
+          "id": "amour",
+          "name": "Amour",
+          "hex": "#EE5253",
+          "legacyNames": []
+        },
+        {
+          "id": "cyanite",
+          "name": "Cyanite",
+          "hex": "#0ABDE3",
+          "legacyNames": []
+        },
+        {
+          "id": "darkMountainMeadow",
+          "name": "Dark Mountain Meadow",
+          "hex": "#10AC84",
+          "legacyNames": []
+        },
+        {
+          "id": "jadeDust",
+          "name": "Jade Dust",
+          "hex": "#00D2D3",
+          "legacyNames": []
+        },
+        {
+          "id": "joustBlue",
+          "name": "Joust Blue",
+          "hex": "#54A0FF",
+          "legacyNames": []
+        },
+        {
+          "id": "nasuPurple",
+          "name": "Nasu Purple",
+          "hex": "#5F27CD",
+          "legacyNames": []
+        },
+        {
+          "id": "lightBlueBallerina",
+          "name": "Light Blue Ballerina",
+          "hex": "#C8D6E5",
+          "legacyNames": []
+        },
+        {
+          "id": "fuelTown",
+          "name": "Fuel Town",
+          "hex": "#576574",
+          "legacyNames": []
+        },
+        {
+          "id": "aquaVelvet",
+          "name": "Aqua Velvet",
+          "hex": "#01A3A4",
+          "legacyNames": []
+        },
+        {
+          "id": "clearBlue",
+          "name": "Clear Blue",
+          "hex": "#2E86DE",
+          "legacyNames": [
+            "bleuDeFrance"
+          ]
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "hex": "#341F97",
+          "legacyNames": []
+        },
+        {
+          "id": "stormPetrel",
+          "name": "Storm Petrel",
+          "hex": "#8395A7",
+          "legacyNames": []
+        },
+        {
+          "id": "imperialPrimer",
+          "name": "Imperial Primer",
+          "hex": "#222F3E",
+          "legacyNames": []
+        }
+      ]
+    },
+    {
+      "id": "sunroom",
+      "name": "Sunroom",
+      "type": "SunroomPalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "goldenSand",
+          "name": "Golden Sand",
+          "hex": "#ECCC68",
+          "legacyNames": []
+        },
+        {
+          "id": "coral",
+          "name": "Coral",
+          "hex": "#FF7F50",
+          "legacyNames": []
+        },
+        {
+          "id": "wildWatermelon",
+          "name": "Wild Watermelon",
+          "hex": "#FF6B81",
+          "legacyNames": []
+        },
+        {
+          "id": "peace",
+          "name": "Peace",
+          "hex": "#A4B0BE",
+          "legacyNames": []
+        },
+        {
+          "id": "grisaille",
+          "name": "Grisaille",
+          "hex": "#57606F",
+          "legacyNames": []
+        },
+        {
+          "id": "orange",
+          "name": "Orange",
+          "hex": "#FFA502",
+          "legacyNames": []
+        },
+        {
+          "id": "bruschettaTomato",
+          "name": "Bruschetta Tomato",
+          "hex": "#FF6348",
+          "legacyNames": []
+        },
+        {
+          "id": "watermelon",
+          "name": "Watermelon",
+          "hex": "#FF4757",
+          "legacyNames": []
+        },
+        {
+          "id": "bayWharf",
+          "name": "Bay Wharf",
+          "hex": "#747D8C",
+          "legacyNames": []
+        },
+        {
+          "id": "prestigeBlue",
+          "name": "Prestige Blue",
+          "hex": "#2F3542",
+          "legacyNames": []
+        },
+        {
+          "id": "limeSoap",
+          "name": "Lime Soap",
+          "hex": "#7BED9F",
+          "legacyNames": []
+        },
+        {
+          "id": "openSky",
+          "name": "Open Sky",
+          "hex": "#70A1FF",
+          "legacyNames": [
+            "frenchSkyBlue"
+          ]
+        },
+        {
+          "id": "saturatedSky",
+          "name": "Saturated Sky",
+          "hex": "#5352ED",
+          "legacyNames": []
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "hex": "#FFFFFF",
+          "legacyNames": []
+        },
+        {
+          "id": "cityLights",
+          "name": "City Lights",
+          "hex": "#DFE4EA",
+          "legacyNames": []
+        },
+        {
+          "id": "ufoGreen",
+          "name": "UFO Green",
+          "hex": "#2ED573",
+          "legacyNames": []
+        },
+        {
+          "id": "clearChill",
+          "name": "Clear Chill",
+          "hex": "#1E90FF",
+          "legacyNames": []
+        },
+        {
+          "id": "vividIris",
+          "name": "Vivid Iris",
+          "hex": "#3742FA",
+          "legacyNames": [
+            "brightGreek"
+          ]
+        },
+        {
+          "id": "antiflashWhite",
+          "name": "Anti-Flash White",
+          "hex": "#F1F2F6",
+          "legacyNames": []
+        },
+        {
+          "id": "twinkleBlue",
+          "name": "Twinkle Blue",
+          "hex": "#CED6E0",
+          "legacyNames": []
+        }
+      ]
+    },
+    {
+      "id": "tapestry",
+      "name": "Tapestry",
+      "type": "TapestryPalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "sunflower",
+          "name": "Sunflower",
+          "hex": "#FFC312",
+          "legacyNames": []
+        },
+        {
+          "id": "energos",
+          "name": "Energos",
+          "hex": "#C4E538",
+          "legacyNames": []
+        },
+        {
+          "id": "blueMartina",
+          "name": "Blue Martina",
+          "hex": "#12CBC4",
+          "legacyNames": []
+        },
+        {
+          "id": "lavenderRose",
+          "name": "Lavender Rose",
+          "hex": "#FDA7DF",
+          "legacyNames": []
+        },
+        {
+          "id": "baraRed",
+          "name": "Bara Red",
+          "hex": "#ED4C67",
+          "legacyNames": []
+        },
+        {
+          "id": "radiantYellow",
+          "name": "Radiant Yellow",
+          "hex": "#F79F1F",
+          "legacyNames": []
+        },
+        {
+          "id": "androidGreen",
+          "name": "Android Green",
+          "hex": "#A3CB38",
+          "legacyNames": []
+        },
+        {
+          "id": "deepLagoon",
+          "name": "Deep Lagoon",
+          "hex": "#1289A7",
+          "legacyNames": [
+            "mediterraneanSea"
+          ]
+        },
+        {
+          "id": "lavenderTea",
+          "name": "Lavender Tea",
+          "hex": "#D980FA",
+          "legacyNames": []
+        },
+        {
+          "id": "veryBerry",
+          "name": "Very Berry",
+          "hex": "#B53471",
+          "legacyNames": []
+        },
+        {
+          "id": "puffinsBill",
+          "name": "Puffins Bill",
+          "hex": "#EE5A24",
+          "legacyNames": []
+        },
+        {
+          "id": "pixelatedGrass",
+          "name": "Pixelated Grass",
+          "hex": "#009432",
+          "legacyNames": []
+        },
+        {
+          "id": "merchantMarineBlue",
+          "name": "Merchant Marine Blue",
+          "hex": "#0652DD",
+          "legacyNames": []
+        },
+        {
+          "id": "forgottenPurple",
+          "name": "Forgotten Purple",
+          "hex": "#9980FA",
+          "legacyNames": []
+        },
+        {
+          "id": "hollyhock",
+          "name": "Hollyhock",
+          "hex": "#833471",
+          "legacyNames": []
+        },
+        {
+          "id": "redPigment",
+          "name": "Red Pigment",
+          "hex": "#EA2027",
+          "legacyNames": []
+        },
+        {
+          "id": "shadedTeal",
+          "name": "Shaded Teal",
+          "hex": "#006266",
+          "legacyNames": [
+            "turkishAqua"
+          ]
+        },
+        {
+          "id": "leaguesUnderTheSea",
+          "name": "20000 Leagues Under the Sea",
+          "hex": "#1B1464",
+          "legacyNames": []
+        },
+        {
+          "id": "circumorbitalRing",
+          "name": "Circumorbital Ring",
+          "hex": "#5758BB",
+          "legacyNames": []
+        },
+        {
+          "id": "magentaPurple",
+          "name": "Magenta Purple",
+          "hex": "#6F1E51",
+          "legacyNames": []
+        }
+      ]
+    },
+    {
+      "id": "tidepool",
+      "name": "Tidepool",
+      "type": "TidepoolPalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "flatFlesh",
+          "name": "Flat Flesh",
+          "hex": "#FAD390",
+          "legacyNames": []
+        },
+        {
+          "id": "melonMelody",
+          "name": "Melon Melody",
+          "hex": "#F8C291",
+          "legacyNames": []
+        },
+        {
+          "id": "livid",
+          "name": "Livid",
+          "hex": "#6A89CC",
+          "legacyNames": []
+        },
+        {
+          "id": "spray",
+          "name": "Spray",
+          "hex": "#82CCDD",
+          "legacyNames": []
+        },
+        {
+          "id": "paradiseGreen",
+          "name": "Paradise Green",
+          "hex": "#B8E994",
+          "legacyNames": []
+        },
+        {
+          "id": "squashBlossom",
+          "name": "Squash Blossom",
+          "hex": "#F6B93B",
+          "legacyNames": []
+        },
+        {
+          "id": "mandarinRed",
+          "name": "Mandarin Red",
+          "hex": "#E55039",
+          "legacyNames": []
+        },
+        {
+          "id": "duskBlue",
+          "name": "Dusk Blue",
+          "hex": "#4A69BD",
+          "legacyNames": [
+            "azraqBlue"
+          ]
+        },
+        {
+          "id": "dupain",
+          "name": "Dupain",
+          "hex": "#60A3BC",
+          "legacyNames": []
+        },
+        {
+          "id": "auroraGreen",
+          "name": "Aurora Green",
+          "hex": "#78E08F",
+          "legacyNames": []
+        },
+        {
+          "id": "amberPetal",
+          "name": "Amber Petal",
+          "hex": "#FA983A",
+          "legacyNames": [
+            "icelandPoppy"
+          ]
+        },
+        {
+          "id": "tomatoRed",
+          "name": "Tomato Red",
+          "hex": "#EB2F06",
+          "legacyNames": []
+        },
+        {
+          "id": "yuèGuāngLánBlue",
+          "name": "Yuè Guāng Lán Blue",
+          "hex": "#1E3799",
+          "legacyNames": []
+        },
+        {
+          "id": "goodSamaritan",
+          "name": "Good Samaritan",
+          "hex": "#3C6382",
+          "legacyNames": []
+        },
+        {
+          "id": "waterfall",
+          "name": "Waterfall",
+          "hex": "#38ADA9",
+          "legacyNames": []
+        },
+        {
+          "id": "carrotOrange",
+          "name": "Carrot Orange",
+          "hex": "#E58E26",
+          "legacyNames": []
+        },
+        {
+          "id": "jalapenoRed",
+          "name": "Jalapeno Red",
+          "hex": "#B71540",
+          "legacyNames": []
+        },
+        {
+          "id": "darkSapphire",
+          "name": "Dark Sapphire",
+          "hex": "#0C2461",
+          "legacyNames": []
+        },
+        {
+          "id": "forestBlues",
+          "name": "Forest Blues",
+          "hex": "#0A3D62",
+          "legacyNames": []
+        },
+        {
+          "id": "reefEncounter",
+          "name": "Reef Encounter",
+          "hex": "#079992",
+          "legacyNames": []
+        }
+      ]
+    },
+    {
+      "id": "pinwheel",
+      "name": "Pinwheel",
+      "type": "PinwheelPalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "fusionRed",
+          "name": "Fusion Red",
+          "hex": "#FC5C65",
+          "legacyNames": []
+        },
+        {
+          "id": "orangeHibiscus",
+          "name": "Orange Hibiscus",
+          "hex": "#FD9644",
+          "legacyNames": []
+        },
+        {
+          "id": "flirtatious",
+          "name": "Flirtatious",
+          "hex": "#FED330",
+          "legacyNames": []
+        },
+        {
+          "id": "reptileGreen",
+          "name": "Reptile Green",
+          "hex": "#26DE81",
+          "legacyNames": []
+        },
+        {
+          "id": "maximumBlueGreen",
+          "name": "Maximum Blue Green",
+          "hex": "#2BCBBA",
+          "legacyNames": []
+        },
+        {
+          "id": "desire",
+          "name": "Desire",
+          "hex": "#EB3B5A",
+          "legacyNames": []
+        },
+        {
+          "id": "beniukonBronze",
+          "name": "Beniukon Bronze",
+          "hex": "#FA8231",
+          "legacyNames": []
+        },
+        {
+          "id": "goldenCab",
+          "name": "Golden Cab",
+          "hex": "#F7B731",
+          "legacyNames": [
+            "nycTaxi"
+          ]
+        },
+        {
+          "id": "algalFuel",
+          "name": "Algal Fuel",
+          "hex": "#20BF6B",
+          "legacyNames": []
+        },
+        {
+          "id": "turquoiseTopaz",
+          "name": "Turquoise Topaz",
+          "hex": "#0FB9B1",
+          "legacyNames": []
+        },
+        {
+          "id": "highBlue",
+          "name": "High Blue",
+          "hex": "#45AAF2",
+          "legacyNames": []
+        },
+        {
+          "id": "c64Ntsc",
+          "name": "C64 NTSC",
+          "hex": "#4B7BEC",
+          "legacyNames": []
+        },
+        {
+          "id": "lighterPurple",
+          "name": "Lighter Purple",
+          "hex": "#A55EEA",
+          "legacyNames": []
+        },
+        {
+          "id": "twinkleBlue",
+          "name": "Twinkle Blue",
+          "hex": "#D1D8E0",
+          "legacyNames": []
+        },
+        {
+          "id": "blueGrey",
+          "name": "Blue Grey",
+          "hex": "#778CA3",
+          "legacyNames": []
+        },
+        {
+          "id": "boyzone",
+          "name": "Boyzone",
+          "hex": "#2D98DA",
+          "legacyNames": []
+        },
+        {
+          "id": "royalBlue",
+          "name": "Royal Blue",
+          "hex": "#3867D6",
+          "legacyNames": []
+        },
+        {
+          "id": "gloomyPurple",
+          "name": "Gloomy Purple",
+          "hex": "#8854D0",
+          "legacyNames": []
+        },
+        {
+          "id": "innuendo",
+          "name": "Innuendo",
+          "hex": "#A5B1C2",
+          "legacyNames": []
+        },
+        {
+          "id": "blueHorizon",
+          "name": "Blue Horizon",
+          "hex": "#4B6584",
+          "legacyNames": []
+        }
+      ]
+    },
+    {
+      "id": "wildflower",
+      "name": "Wildflower",
+      "type": "WildflowerPalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "orchidOrange",
+          "name": "Orchid Orange",
+          "hex": "#FEA47F",
+          "legacyNames": []
+        },
+        {
+          "id": "spiroDiscoBall",
+          "name": "Spiro Disco Ball",
+          "hex": "#25CCF7",
+          "legacyNames": []
+        },
+        {
+          "id": "honeyGlow",
+          "name": "Honey Glow",
+          "hex": "#EAB543",
+          "legacyNames": []
+        },
+        {
+          "id": "sweetGarden",
+          "name": "Sweet Garden",
+          "hex": "#55E6C1",
+          "legacyNames": []
+        },
+        {
+          "id": "fallingStar",
+          "name": "Falling Star",
+          "hex": "#CAD3C8",
+          "legacyNames": []
+        },
+        {
+          "id": "richGardenia",
+          "name": "Rich Gardenia",
+          "hex": "#F97F51",
+          "legacyNames": []
+        },
+        {
+          "id": "clearChill",
+          "name": "Clear Chill",
+          "hex": "#1B9CFC",
+          "legacyNames": []
+        },
+        {
+          "id": "paleLinen",
+          "name": "Pale Linen",
+          "hex": "#F8EFBA",
+          "legacyNames": [
+            "sarawakWhitePepper"
+          ]
+        },
+        {
+          "id": "gardenTeal",
+          "name": "Garden Teal",
+          "hex": "#58B19F",
+          "legacyNames": [
+            "keppel"
+          ]
+        },
+        {
+          "id": "shipsOfficer",
+          "name": "Ship's Officer",
+          "hex": "#2C3A47",
+          "legacyNames": []
+        },
+        {
+          "id": "fieryFuchsia",
+          "name": "Fiery Fuchsia",
+          "hex": "#B33771",
+          "legacyNames": []
+        },
+        {
+          "id": "bluebell",
+          "name": "Bluebell",
+          "hex": "#3B3B98",
+          "legacyNames": []
+        },
+        {
+          "id": "peachBlossom",
+          "name": "Peach Blossom",
+          "hex": "#FD7272",
+          "legacyNames": [
+            "georgiaPeach"
+          ]
+        },
+        {
+          "id": "oasisStream",
+          "name": "Oasis Stream",
+          "hex": "#9AECDB",
+          "legacyNames": []
+        },
+        {
+          "id": "brightUbe",
+          "name": "Bright Ube",
+          "hex": "#D6A2E8",
+          "legacyNames": []
+        },
+        {
+          "id": "magentaPurple",
+          "name": "Magenta Purple",
+          "hex": "#6D214F",
+          "legacyNames": []
+        },
+        {
+          "id": "endingNavyBlue",
+          "name": "Ending Navy Blue",
+          "hex": "#182C61",
+          "legacyNames": []
+        },
+        {
+          "id": "sasquatchSocks",
+          "name": "Sasquatch Socks",
+          "hex": "#FC427B",
+          "legacyNames": []
+        },
+        {
+          "id": "pineGlade",
+          "name": "Pine Glade",
+          "hex": "#BDC581",
+          "legacyNames": []
+        },
+        {
+          "id": "highlighterLavender",
+          "name": "Highlighter Lavender",
+          "hex": "#82589F",
+          "legacyNames": []
+        }
+      ]
+    },
+    {
+      "id": "keepsake",
+      "name": "Keepsake",
+      "type": "KeepsakePalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "creamyPeach",
+          "name": "Creamy Peach",
+          "hex": "#F3A683",
+          "legacyNames": []
+        },
+        {
+          "id": "rosyHighlight",
+          "name": "Rosy Highlight",
+          "hex": "#F7D794",
+          "legacyNames": []
+        },
+        {
+          "id": "softBlue",
+          "name": "Soft Blue",
+          "hex": "#778BEB",
+          "legacyNames": []
+        },
+        {
+          "id": "brewedMustard",
+          "name": "Brewed Mustard",
+          "hex": "#E77F67",
+          "legacyNames": []
+        },
+        {
+          "id": "oldGeranium",
+          "name": "Old Geranium",
+          "hex": "#CF6A87",
+          "legacyNames": []
+        },
+        {
+          "id": "sawtoothAak",
+          "name": "Sawtooth Aak",
+          "hex": "#F19066",
+          "legacyNames": []
+        },
+        {
+          "id": "summertime",
+          "name": "Summertime",
+          "hex": "#F5CD79",
+          "legacyNames": []
+        },
+        {
+          "id": "cornflower",
+          "name": "Cornflower",
+          "hex": "#546DE5",
+          "legacyNames": []
+        },
+        {
+          "id": "tigerlily",
+          "name": "Tigerlily",
+          "hex": "#E15F41",
+          "legacyNames": []
+        },
+        {
+          "id": "deepRose",
+          "name": "Deep Rose",
+          "hex": "#C44569",
+          "legacyNames": []
+        },
+        {
+          "id": "purpleMountainMajesty",
+          "name": "Purple Mountain Majesty",
+          "hex": "#786FA6",
+          "legacyNames": []
+        },
+        {
+          "id": "roguePink",
+          "name": "Rogue Pink",
+          "hex": "#F8A5C2",
+          "legacyNames": []
+        },
+        {
+          "id": "squeaky",
+          "name": "Squeaky",
+          "hex": "#63CDDA",
+          "legacyNames": []
+        },
+        {
+          "id": "rosewater",
+          "name": "Rosewater",
+          "hex": "#EA8685",
+          "legacyNames": [
+            "appleValley"
+          ]
+        },
+        {
+          "id": "pencilLead",
+          "name": "Pencil Lead",
+          "hex": "#596275",
+          "legacyNames": []
+        },
+        {
+          "id": "purpleCorallite",
+          "name": "Purple Corallite",
+          "hex": "#574B90",
+          "legacyNames": []
+        },
+        {
+          "id": "flamingoPink",
+          "name": "Flamingo Pink",
+          "hex": "#F78FB3",
+          "legacyNames": []
+        },
+        {
+          "id": "blueRipple",
+          "name": "Blue Ripple",
+          "hex": "#3DC1D3",
+          "legacyNames": [
+            "blueCuracao"
+          ]
+        },
+        {
+          "id": "porcelainRose",
+          "name": "Porcelain Rose",
+          "hex": "#E66767",
+          "legacyNames": []
+        },
+        {
+          "id": "eveningSlate",
+          "name": "Evening Slate",
+          "hex": "#303952",
+          "legacyNames": [
+            "biscay"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kiln",
+      "name": "Kiln",
+      "type": "KilnPalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "jacksonsPurple",
+          "name": "Jacksons Purple",
+          "hex": "#40407A",
+          "legacyNames": []
+        },
+        {
+          "id": "c64Purple",
+          "name": "C64 Purple",
+          "hex": "#706FD3",
+          "legacyNames": []
+        },
+        {
+          "id": "swanWhite",
+          "name": "Swan White",
+          "hex": "#F7F1E3",
+          "legacyNames": []
+        },
+        {
+          "id": "summerSky",
+          "name": "Summer Sky",
+          "hex": "#34ACE0",
+          "legacyNames": []
+        },
+        {
+          "id": "celestialGreen",
+          "name": "Celestial Green",
+          "hex": "#33D9B2",
+          "legacyNames": []
+        },
+        {
+          "id": "luckyPoint",
+          "name": "Lucky Point",
+          "hex": "#2C2C54",
+          "legacyNames": []
+        },
+        {
+          "id": "liberty",
+          "name": "Liberty",
+          "hex": "#474787",
+          "legacyNames": []
+        },
+        {
+          "id": "hotStone",
+          "name": "Hot Stone",
+          "hex": "#AAA69D",
+          "legacyNames": []
+        },
+        {
+          "id": "devilBlue",
+          "name": "Devil Blue",
+          "hex": "#227093",
+          "legacyNames": []
+        },
+        {
+          "id": "poolside",
+          "name": "Poolside",
+          "hex": "#218C74",
+          "legacyNames": [
+            "palmSpringsSplash"
+          ]
+        },
+        {
+          "id": "fluorescentRed",
+          "name": "Fluorescent Red",
+          "hex": "#FF5252",
+          "legacyNames": []
+        },
+        {
+          "id": "syntheticPumpkin",
+          "name": "Synthetic Pumpkin",
+          "hex": "#FF793F",
+          "legacyNames": []
+        },
+        {
+          "id": "crocodileTooth",
+          "name": "Crocodile Tooth",
+          "hex": "#D1CCC0",
+          "legacyNames": []
+        },
+        {
+          "id": "mandarinSorbet",
+          "name": "Mandarin Sorbet",
+          "hex": "#FFB142",
+          "legacyNames": []
+        },
+        {
+          "id": "spicedButternut",
+          "name": "Spiced Butternut",
+          "hex": "#FFDA79",
+          "legacyNames": []
+        },
+        {
+          "id": "eyeOfNewt",
+          "name": "Eye Of Newt",
+          "hex": "#B33939",
+          "legacyNames": []
+        },
+        {
+          "id": "emberClay",
+          "name": "Ember Clay",
+          "hex": "#CD6133",
+          "legacyNames": [
+            "chileanFire"
+          ]
+        },
+        {
+          "id": "greyPorcelain",
+          "name": "Grey Porcelain",
+          "hex": "#84817A",
+          "legacyNames": []
+        },
+        {
+          "id": "toastedOchre",
+          "name": "Toasted Ochre",
+          "hex": "#CC8E35",
+          "legacyNames": [
+            "alamedaOchre"
+          ]
+        },
+        {
+          "id": "desert",
+          "name": "Desert",
+          "hex": "#CCAE62",
+          "legacyNames": []
+        }
+      ]
+    },
+    {
+      "id": "signal",
+      "name": "Signal",
+      "type": "SignalPalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "highlighterPink",
+          "name": "Highlighter Pink",
+          "hex": "#EF5777",
+          "legacyNames": []
+        },
+        {
+          "id": "darkPeriwinkle",
+          "name": "Dark Periwinkle",
+          "hex": "#575FCF",
+          "legacyNames": []
+        },
+        {
+          "id": "megaman",
+          "name": "Megaman",
+          "hex": "#4BCFFA",
+          "legacyNames": []
+        },
+        {
+          "id": "freshTurquoise",
+          "name": "Fresh Turquoise",
+          "hex": "#34E7E4",
+          "legacyNames": []
+        },
+        {
+          "id": "mintyGreen",
+          "name": "Minty Green",
+          "hex": "#0BE881",
+          "legacyNames": []
+        },
+        {
+          "id": "sizzlingRed",
+          "name": "Sizzling Red",
+          "hex": "#F53B57",
+          "legacyNames": []
+        },
+        {
+          "id": "freeSpeechBlue",
+          "name": "Free Speech Blue",
+          "hex": "#3C40C6",
+          "legacyNames": []
+        },
+        {
+          "id": "spiroDiscoBall",
+          "name": "Spiro Disco Ball",
+          "hex": "#0FBCF9",
+          "legacyNames": []
+        },
+        {
+          "id": "jadeDust",
+          "name": "Jade Dust",
+          "hex": "#00D8D6",
+          "legacyNames": []
+        },
+        {
+          "id": "greenTeal",
+          "name": "Green Teal",
+          "hex": "#05C46B",
+          "legacyNames": []
+        },
+        {
+          "id": "nârenjiOrange",
+          "name": "Nârenji Orange",
+          "hex": "#FFC048",
+          "legacyNames": []
+        },
+        {
+          "id": "yrielYellow",
+          "name": "Yriel Yellow",
+          "hex": "#FFDD59",
+          "legacyNames": []
+        },
+        {
+          "id": "sunsetOrange",
+          "name": "Sunset Orange",
+          "hex": "#FF5E57",
+          "legacyNames": []
+        },
+        {
+          "id": "hintOfElusiveBlue",
+          "name": "Hint of Elusive Blue",
+          "hex": "#D2DAE2",
+          "legacyNames": []
+        },
+        {
+          "id": "goodNight",
+          "name": "Good Night!",
+          "hex": "#485460",
+          "legacyNames": []
+        },
+        {
+          "id": "chromeYellow",
+          "name": "Chrome Yellow",
+          "hex": "#FFA801",
+          "legacyNames": []
+        },
+        {
+          "id": "vibrantYellow",
+          "name": "Vibrant Yellow",
+          "hex": "#FFD32A",
+          "legacyNames": []
+        },
+        {
+          "id": "redOrange",
+          "name": "Red Orange",
+          "hex": "#FF3F34",
+          "legacyNames": []
+        },
+        {
+          "id": "pavement",
+          "name": "Pavement",
+          "hex": "#808E9B",
+          "legacyNames": [
+            "londonSquare"
+          ]
+        },
+        {
+          "id": "blackPearl",
+          "name": "Black Pearl",
+          "hex": "#1E272E",
+          "legacyNames": []
+        }
+      ]
+    },
+    {
+      "id": "sherbet",
+      "name": "Sherbet",
+      "type": "SherbetPalette",
+      "unreleased": false,
+      "colors": [
+        {
+          "id": "brightLilac",
+          "name": "Bright Lilac",
+          "hex": "#CD84F1",
+          "legacyNames": []
+        },
+        {
+          "id": "prettyPlease",
+          "name": "Pretty Please",
+          "hex": "#FFCCCC",
+          "legacyNames": []
+        },
+        {
+          "id": "lightRed",
+          "name": "Light Red",
+          "hex": "#FF4D4D",
+          "legacyNames": []
+        },
+        {
+          "id": "mandarinSorbet",
+          "name": "Mandarin Sorbet",
+          "hex": "#FFAF40",
+          "legacyNames": []
+        },
+        {
+          "id": "unmellowYellow",
+          "name": "Unmellow Yellow",
+          "hex": "#FFFA65",
+          "legacyNames": []
+        },
+        {
+          "id": "lightPurple",
+          "name": "Light Purple",
+          "hex": "#C56CF0",
+          "legacyNames": []
+        },
+        {
+          "id": "youngSalmon",
+          "name": "Young Salmon",
+          "hex": "#FFB8B8",
+          "legacyNames": []
+        },
+        {
+          "id": "redOrange",
+          "name": "Red Orange",
+          "hex": "#FF3838",
+          "legacyNames": []
+        },
+        {
+          "id": "radiantYellow",
+          "name": "Radiant Yellow",
+          "hex": "#FF9F1A",
+          "legacyNames": []
+        },
+        {
+          "id": "dornYellow",
+          "name": "Dorn Yellow",
+          "hex": "#FFF200",
+          "legacyNames": []
+        },
+        {
+          "id": "wintergreen",
+          "name": "Wintergreen",
+          "hex": "#32FF7E",
+          "legacyNames": []
+        },
+        {
+          "id": "electricBlue",
+          "name": "Electric Blue",
+          "hex": "#7EFFF5",
+          "legacyNames": []
+        },
+        {
+          "id": "neonBlue",
+          "name": "Neon Blue",
+          "hex": "#18DCFF",
+          "legacyNames": []
+        },
+        {
+          "id": "lightSlateBlue",
+          "name": "Light Slate Blue",
+          "hex": "#7D5FFF",
+          "legacyNames": []
+        },
+        {
+          "id": "shadowedSteel",
+          "name": "Shadowed Steel",
+          "hex": "#4B4B4B",
+          "legacyNames": []
+        },
+        {
+          "id": "weirdGreen",
+          "name": "Weird Green",
+          "hex": "#3AE374",
+          "legacyNames": []
+        },
+        {
+          "id": "hammamBlue",
+          "name": "Hammam Blue",
+          "hex": "#67E6DC",
+          "legacyNames": []
+        },
+        {
+          "id": "spiroDiscoBall",
+          "name": "Spiro Disco Ball",
+          "hex": "#17C0EB",
+          "legacyNames": []
+        },
+        {
+          "id": "lightIndigo",
+          "name": "Light Indigo",
+          "hex": "#7158E2",
+          "legacyNames": []
+        },
+        {
+          "id": "charcoal",
+          "name": "Charcoal",
+          "hex": "#3D3D3D",
+          "legacyNames": [
+            "balticSea"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simple",
+      "name": "Simple",
+      "type": "SimplePalette",
+      "unreleased": true,
+      "colors": [
+        {
+          "id": "alizarin",
+          "name": "Alizarin",
+          "hex": "#E74C3C",
+          "legacyNames": []
+        },
+        {
+          "id": "carrot",
+          "name": "Carrot",
+          "hex": "#E67E22",
+          "legacyNames": []
+        },
+        {
+          "id": "orange",
+          "name": "Orange",
+          "hex": "#F39C12",
+          "legacyNames": []
+        },
+        {
+          "id": "emerald",
+          "name": "Emerald",
+          "hex": "#2ECC71",
+          "legacyNames": []
+        },
+        {
+          "id": "turquoise",
+          "name": "Turquoise",
+          "hex": "#1ABC9C",
+          "legacyNames": []
+        },
+        {
+          "id": "riverBlue",
+          "name": "River Blue",
+          "hex": "#3498DB",
+          "legacyNames": []
+        },
+        {
+          "id": "amethyst",
+          "name": "Amethyst",
+          "hex": "#9B59B6",
+          "legacyNames": []
+        },
+        {
+          "id": "pomegranate",
+          "name": "Pomegranate",
+          "hex": "#C0392B",
+          "legacyNames": []
+        },
+        {
+          "id": "greenSea",
+          "name": "Green Sea",
+          "hex": "#16A085",
+          "legacyNames": []
+        }
+      ]
+    }
+  ]
+}

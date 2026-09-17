@@ -1,0 +1,13 @@
+{
+  "name": "dhflatuicolors-explorer",
+  "private": true,
+  "scripts": {
+    "test": "node --test site/tests/model.test.mjs",
+    "test:browser": "playwright test",
+    "site:check": "python3 -B scripts/export-palettes.py --check",
+    "site:export": "python3 -B scripts/export-palettes.py"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}

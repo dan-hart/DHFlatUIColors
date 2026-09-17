@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#FF6600" />
+    <meta
+      name="description"
+      content="Explore DHFlatUIColors. Browse 15 Swift color palettes, preview colors, check text contrast, and copy ready-to-use SDK code."
+    />
+    <title>DHFlatUIColors — Color, ready for Swift.</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="./fonts/AtkinsonHyperlegible-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/AtkinsonHyperlegible-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./app.mjs"></script>
+  </head>
+  <body>
+    <a href="#explorer" class="skip-link">Skip to color explorer</a>
+    <header class="site-header shell">
+      <a class="brand" href="./" aria-label="DHFlatUIColors home"
+        ><span class="brand-mark" aria-hidden="true"
+          ><i></i><i></i><i></i><i></i></span
+        ><span
+          >DHFlatUIColors<span class="brand-sub"
+            >THE SWIFT COLOR LIBRARY</span
+          ></span
+        ></a
+      >
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#explorer" class="current">Explorer</a
+        ><a
+          href="https://github.com/dan-hart/DHFlatUIColors"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub <span aria-hidden="true">↗</span></a
+        ><a href="#installation" class="install-link"
+          >Get the package <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">
+            <span class="orange-dot"></span> COLOR, READY FOR SWIFT.
+          </p>
+          <h1 id="hero-title">
+            Find your next<br /><span>favorite color.</span>
+          </h1>
+        </div>
+        <div class="hero-aside">
+          <div class="color-ribbon" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <p>
+            A good starting point changes everything.<br />Explore the palettes.
+            Try a color.<br />Take the code with you.
+          </p>
+          <a href="#explorer" class="text-link"
+            >Make something colorful <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+      <section
+        id="explorer"
+        class="workbench shell"
+        aria-label="Interactive SDK explorer"
+        aria-busy="true"
+      >
+        <div class="workbench-top">
+          <div class="workspace-label">
+            <span class="orange-dot"></span> THE EXPLORER
+            <span class="source-label">Live from the SDK</span>
+          </div>
+          <div class="search-wrap">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="m16 16 4.5 4.5" /></svg
+            ><label for="search" class="sr-only"
+              >Search all colors by name, hex, or palette</label
+            ><input
+              id="search"
+              type="search"
+              placeholder="Search a color, hex, or palette…"
+              autocomplete="off"
+              spellcheck="false"
+            /><kbd aria-hidden="true">/</kbd>
+          </div>
+        </div>
+        <div id="load-state" class="load-state" role="status">
+          Loading the palette collection…
+        </div>
+        <div id="workspace" class="workspace" hidden>
+          <aside class="palette-sidebar">
+            <div class="sidebar-heading">
+              <h2>Palettes</h2>
+              <span id="palette-total"></span>
+            </div>
+            <nav id="palette-nav" aria-label="Choose a palette"></nav>
+            <div class="sidebar-foot">
+              <span class="mini-mark" aria-hidden="true">↗</span>
+              <p>Small package.<br />Plenty of possibilities.</p>
+              <a
+                href="https://github.com/dan-hart/DHFlatUIColors/blob/main/MIGRATION.md"
+                >Naming & migration <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </aside>
+          <div class="collection">
+            <div class="mobile-palette">
+              <label for="palette-select">Palette</label
+              ><select id="palette-select"></select>
+            </div>
+            <div class="collection-heading">
+              <div>
+                <p id="collection-kicker" class="eyebrow">
+                  LESS, BUT JUST ENOUGH
+                </p>
+                <h2 id="collection-title">
+                  Simple<span class="title-dot">.</span>
+                </h2>
+              </div>
+              <span id="color-count" class="count-label" role="status"></span>
+            </div>
+            <p id="collection-description" class="collection-description"></p>
+            <div id="swatch-grid" class="swatch-grid" aria-label="Colors"></div>
+            <div id="empty-state" class="empty-state" hidden>
+              <span aria-hidden="true">⌕</span>
+              <h3>No colors found.</h3>
+              <p>
+                Try a name like “River Blue”, a hex like “3498DB”, or a palette
+                name.
+              </p>
+              <button id="clear-search" class="text-button">
+                Clear search <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <p class="collection-foot">
+              <span aria-hidden="true">↳</span> Select a swatch to preview it
+              and get the code.
+            </p>
+          </div>
+          <aside
+            id="inspector"
+            class="inspector"
+            aria-label="Selected color inspector"
+          >
+            <button id="back-to-colors" class="mobile-back">
+              ↑ Back to colors
+            </button>
+            <div class="inspector-label">
+              <span>COLOR INSPECTOR</span
+              ><button
+                id="share"
+                class="icon-button"
+                aria-label="Copy link to selected color"
+                title="Copy link"
+              >
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path
+                    d="m10 13 4-4m-6 6-1 1a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2 2 1-1a4 4 0 0 1 6 6l-4 4a4 4 0 0 1-6 0"
+                    transform="translate(1 0)"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div id="selected-swatch" class="selected-swatch">
+              <span id="selected-monogram" aria-hidden="true">Aa</span
+              ><span id="swatch-caption">Atkinson Hyperlegible</span>
+            </div>
+            <div class="selected-heading">
+              <div>
+                <p id="selected-palette" class="eyebrow"></p>
+                <h2 id="selected-name"></h2>
+              </div>
+              <button id="copy-hex" class="hex-button" title="Copy hex value">
+                <span id="selected-hex"></span
+                ><svg aria-hidden="true" viewBox="0 0 24 24">
+                  <rect x="8" y="8" width="12" height="12" rx="2" />
+                  <path
+                    d="M15 8V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h4"
+                  />
+                </svg>
+              </button>
+            </div>
+            <p id="selected-rgb" class="rgb-label"></p>
+            <div class="inspector-section">
+              <div class="section-label">
+                <h3>Try it in context</h3>
+                <div
+                  class="segmented"
+                  role="group"
+                  aria-label="Preview appearance"
+                >
+                  <button id="preview-light" aria-pressed="true">Light</button
+                  ><button id="preview-dark" aria-pressed="false">Dark</button>
+                </div>
+              </div>
+              <div id="preview-stage" class="preview-stage">
+                <div class="sample-ui">
+                  <div class="sample-top">
+                    <span class="sample-dot"></span
+                    ><span>A little inspiration</span
+                    ><span aria-hidden="true">↗</span>
+                  </div>
+                  <h4>Your next great idea.</h4>
+                  <p>Give it a little color.</p>
+                  <span id="sample-button" class="sample-button"
+                    >Make it happen <span aria-hidden="true">→</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="inspector-section contrast-section">
+              <div class="section-label">
+                <h3>Text contrast</h3>
+                <span class="tiny-label">WCAG AA</span>
+              </div>
+              <div class="contrast-options">
+                <button
+                  id="white-contrast"
+                  class="contrast-option"
+                  aria-pressed="false"
+                >
+                  <span class="ink-chip white-ink">Aa</span
+                  ><span
+                    ><span class="contrast-name">White text</span
+                    ><strong id="white-ratio"></strong
+                    ><small id="white-rating"></small
+                  ></span></button
+                ><button
+                  id="dark-contrast"
+                  class="contrast-option"
+                  aria-pressed="true"
+                >
+                  <span class="ink-chip dark-ink">Aa</span
+                  ><span
+                    ><span class="contrast-name">Dark text</span
+                    ><strong id="dark-ratio"></strong
+                    ><small id="dark-rating"></small
+                  ></span>
+                </button>
+              </div>
+              <p class="contrast-note">
+                Choose an ink to preview. Normal text needs 4.5:1; large text
+                needs 3:1.
+              </p>
+            </div>
+            <div class="inspector-section code-section">
+              <div class="section-label">
+                <h3>Make it real</h3>
+                <label class="sr-only" for="code-format">Code format</label
+                ><select id="code-format">
+                  <option value="swiftui">SwiftUI</option>
+                  <option value="uikit">UIKit</option>
+                  <option value="appkit">AppKit</option>
+                  <option value="hex">HEX</option>
+                </select>
+              </div>
+              <div class="code-block">
+                <div class="code-top">
+                  <span id="code-label">SWIFT</span
+                  ><button id="copy-code">
+                    Copy
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <rect x="8" y="8" width="12" height="12" rx="2" />
+                      <path
+                        d="M15 8V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <pre
+                  tabindex="0"
+                  aria-label="Code example"
+                ><code id="code"></code></pre>
+              </div>
+              <p id="availability" class="availability"></p>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section
+        id="installation"
+        class="installation shell"
+        aria-labelledby="install-heading"
+      >
+        <div>
+          <p class="eyebrow">FROM SWATCH TO SHIPPING</p>
+          <h2 id="install-heading">
+            A little dependency.<br />A whole lot of color.
+          </h2>
+          <p>
+            Add DHFlatUIColors with Swift Package Manager.<br />Swift 5.9+ · iOS
+            · macOS · watchOS · tvOS
+          </p>
+          <a
+            href="https://github.com/dan-hart/DHFlatUIColors#installation"
+            class="text-link"
+            >Read the documentation <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="installation-code">
+          <div class="install-code-heading">
+            <span>Package.swift</span
+            ><button id="copy-install" class="text-button">
+              Copy dependency <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <pre><code id="install-code">.package(
+    url: "https://github.com/dan-hart/DHFlatUIColors.git",
+    from: "1.0.0"
+)</code></pre>
+          <p>
+            1.0.0 is the latest release. Simple is available on
+            <a href="https://github.com/dan-hart/DHFlatUIColors/tree/main"
+              >main</a
+            >
+            and is not yet included in a tagged release.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer shell">
+      <div class="footer-brand">
+        DHFlatUIColors<span>A small toolkit for colorful ideas.</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://flatuicolors.com"
+          >Colors by Flat UI Colors <span aria-hidden="true">↗</span></a
+        ><a
+          href="https://github.com/dan-hart/DHFlatUIColors/blob/main/LICENSE.md"
+          >GPLv3</a
+        ><a href="https://buymeacoffee.com/codedbydan" class="coffee-link"
+          >Buy me a coffee <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <noscript
+      ><p class="noscript">
+        This explorer needs JavaScript. You can also
+        <a
+          href="https://github.com/dan-hart/DHFlatUIColors/tree/main/Sources/DHFlatUIColors/Palettes"
+          >browse every palette on GitHub</a
+        >.
+      </p></noscript
+    >
+  </body>
+</html>

@@ -12,6 +12,14 @@ Access 15 color palettes in Swift, with readable names, hex values, and SwiftUI 
 
 **Unreleased on `main`:** the nine-color Simple palette described below is not included in 1.0.0.
 
+## Interactive explorer
+
+[Open the color explorer →](https://dan-hart.github.io/DHFlatUIColors/)
+
+Browse all 15 palettes, search colors by name or hex, preview them in light and dark interfaces, check text contrast, and copy SwiftUI, UIKit, or AppKit accessors. The explorer uses the current source on `main` and clearly marks unreleased palettes.
+
+See [explorer development and deployment](docs/explorer.md) for the source-data export and local preview workflow.
+
 ## Requirements
 
 - Swift tools 5.9 or later

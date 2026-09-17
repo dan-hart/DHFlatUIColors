@@ -64,3 +64,10 @@ fastlane/test_output
 # Local Finder and SwiftPM workspace metadata
 .DS_Store
 .swiftpm/
+
+# Explorer development and build outputs
+node_modules/
+playwright-report/
+test-results/
+_site/
+__pycache__/
