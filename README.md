@@ -1,5 +1,11 @@
 # DHFlatUIColors
 
+[![Latest release](https://img.shields.io/github/v/release/dan-hart/DHFlatUIColors?style=flat-square&color=8B5CF6)](https://github.com/dan-hart/DHFlatUIColors/releases/latest)
+[![Swift 5.9+](https://img.shields.io/badge/Swift-5.9%2B-FA7343?style=flat-square&logo=swift&logoColor=white)](#requirements)
+[![Platforms: iOS, macOS, watchOS, tvOS](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20watchOS%20%7C%20tvOS-333333?style=flat-square&logo=apple&logoColor=white)](#requirements)
+[![License: GPL v3](https://img.shields.io/badge/license-GPLv3-3B82F6?style=flat-square)](LICENSE.md)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-FFDD00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/codedbydan)
+
 Access 15 color palettes in Swift, with readable names, hex values, and SwiftUI colors. UIKit and AppKit color accessors are also available on supported platforms.
 
 **Current release: [1.0.0](https://github.com/dan-hart/DHFlatUIColors/releases/tag/1.0.0)** — descriptive palette names, 27 individual color renames, and deprecated compatibility APIs for existing code.
