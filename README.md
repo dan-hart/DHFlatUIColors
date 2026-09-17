@@ -129,3 +129,7 @@ The colors come from [Flat UI Colors](https://flatuicolors.com). This package pr
 ## License
 
 This project is licensed under the [GNU GPLv3 License](LICENSE.md).
+
+## Support
+
+<a href="https://buymeacoffee.com/codedbydan"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="217" height="60"></a>
